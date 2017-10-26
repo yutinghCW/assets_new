@@ -1,0 +1,21 @@
+<svg id="dd1787d5-e918-4f56-895e-db6f464172d6" data-name="73cd5750-0ea6-4eff-98f5-0a793bdb9912" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <style>
+      .\34 f404466-e8ce-4a95-b41e-768917cedb67 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>link-circle</title>
+  <g>
+    <circle class="4f404466-e8ce-4a95-b41e-768917cedb67" cx="26" cy="26" r="25"/>
+    <g>
+      <path class="4f404466-e8ce-4a95-b41e-768917cedb67" d="M27.29,24.71a3.85,3.85,0,0,1,0,5.44l-6.21,6.21a3.85,3.85,0,0,1-5.44,0l-.86-.86a3.85,3.85,0,0,1,0-5.44L21,23.85"/>
+      <path class="4f404466-e8ce-4a95-b41e-768917cedb67" d="M24.71,27.29a3.85,3.85,0,0,1,0-5.44l6.21-6.21a3.85,3.85,0,0,1,5.44,0l.86.86a3.85,3.85,0,0,1,0,5.44L31,28.15"/>
+    </g>
+  </g>
+</svg>

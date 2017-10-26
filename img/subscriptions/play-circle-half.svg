@@ -1,0 +1,18 @@
+<svg id="f7418023-cd73-4984-9f91-01a8d86a00a5" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <style>
+      .\33 c6d14d1-82fe-4cf4-bc97-8da24e079f34 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>arrow-工作區域 2</title>
+  <g>
+    <circle class="3c6d14d1-82fe-4cf4-bc97-8da24e079f34" cx="26.5" cy="26.5" r="25.48"/>
+    <path class="3c6d14d1-82fe-4cf4-bc97-8da24e079f34" d="M39.18,25,21.38,14a1.74,1.74,0,0,0-2.66,1.48v22A1.74,1.74,0,0,0,21.38,39L39.18,28A1.74,1.74,0,0,0,39.18,25Z"/>
+  </g>
+</svg>
