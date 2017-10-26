@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-bookmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Slices" transform="translate(-40.000000, -132.000000)" fill="#D30C18">
+            <g id="icon-bookmark" transform="translate(40.000000, 132.000000)">
+                <path d="M6,3.99124431 C6,2.89151044 6.89309612,2 7.99481124,2 L23.3251888,2 C24.4268926,2 25.32,2.89989752 25.32,3.99124431 L25.32,30 L15.5345455,25.2864844 L6,30 L6,3.99124431 Z M8.37766335,4.46611624 L8.378363,26.2652995 L15.5525657,22.3917839 L22.9363459,26.2652995 L22.9356462,4.46611624 L8.37766335,4.46611624 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

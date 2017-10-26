@@ -1,0 +1,32 @@
+<svg id="0aede83f-e579-48ea-82f0-0df6d53be2ee" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <style>
+      .\32 b214cfe-c9e2-4ccb-bd53-d5da45616df0 {
+        fill: #fff;
+      }
+
+      .\30 435339a-7121-4ed7-92a7-d7a740bacb1e {
+        fill: #e6e6e6;
+      }
+
+      .\39 fadb1f4-26b7-48d3-b5b8-a2aa9e50e2e5 {
+        fill: none;
+        stroke: #009239;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.35px;
+      }
+    </style>
+  </defs>
+  <title>sixEquityIcon</title>
+  <g>
+    <path class="2b214cfe-c9e2-4ccb-bd53-d5da45616df0" d="M26,51.85A25.85,25.85,0,1,1,51.85,26,25.88,25.88,0,0,1,26,51.85Z"/>
+    <path class="0435339a-7121-4ed7-92a7-d7a740bacb1e" d="M26,.3A25.7,25.7,0,1,1,.3,26,25.73,25.73,0,0,1,26,.3M26,0A26,26,0,1,0,52,26,26,26,0,0,0,26,0Z"/>
+  </g>
+  <g>
+    <path class="9fadb1f4-26b7-48d3-b5b8-a2aa9e50e2e5" d="M10.25,15.6h3.38l4.22,12.22a2,2,0,0,0-1.91,2,2,2,0,0,0,1.91,2H37.28"/>
+    <polygon class="9fadb1f4-26b7-48d3-b5b8-a2aa9e50e2e5" points="18.14 18.98 21.74 28.44 34.15 28.44 37.75 18.98 18.14 18.98"/>
+    <circle class="9fadb1f4-26b7-48d3-b5b8-a2aa9e50e2e5" cx="19.49" cy="36.04" r="2.37"/>
+    <circle class="9fadb1f4-26b7-48d3-b5b8-a2aa9e50e2e5" cx="33.29" cy="36.04" r="2.37"/>
+  </g>
+</svg>
