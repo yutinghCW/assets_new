@@ -1,0 +1,901 @@
+* {
+	transition: .3s;
+}
+html {
+}
+body {
+	position: relative;
+	min-height: 100vh;
+	font-family: Arial, "微軟正黑體", "繁黑體", 'Microsoft JhengHei', 'Microsoft YaHei', 'Heiti TC', 'LiHei Pro', sans-serif, "新細明體", PMingLiU;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	overflow-x: hidden;
+	/* Margin bottom by footer height */
+	padding-bottom: 60px;
+}
+/*=================NAVBAR========================*/
+nav#irisbar .container {
+	position: relative;
+	font-weight: 400;
+}
+#irisbar .navbar-brand img {
+	width: 84px;
+	height: auto;
+}
+#irisbar .nav > li > a {
+	color: #000;
+}
+@media (max-width: 767px) {
+#irisbar .navbar-header::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.navbar{
+		background-color:#777777;
+	}		
+}
+@media (min-width: 768px) {
+#irisbar .navbar-brand {
+		position: absolute;
+		top: 0;
+		left: 15px;
+		padding: 16px 15px;
+		background-color: #d60c18;
+	}
+#irisbar .nav li {
+		padding: 10px 7.5px;
+	}
+#irisbar .nav > li > a {
+		position: relative;
+		padding-left: 5px;
+		padding-right: 5px;
+/*		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;*/
+	}
+#irisbar .nav > li > a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 3px;
+		transition: width 0.3s;
+		background-color: #ffe600;
+	}
+#irisbar .nav > li > a:hover {
+		color:#ffe600;
+	}
+#irisbar .nav > li > a:hover::after {
+		width: 100%;
+	}
+	/*.nav li.snsBtn {
+		padding: 29px 0px;
+	}
+	.nav > li.snsBtn > a {
+		padding: 2px 0;
+	}*/
+}
+#irisbar .navbar-nav > li > a {
+    line-height: 25px;
+}
+.top-nav-collapse{
+	background-color:rgb(113, 113, 113); 
+}
+.top-nav-collapse .navbar-brand {
+	padding: 35px 15px;
+}
+.top-nav-collapse .nav > li > a {
+	border: 2px solid #252525;
+	padding: 5px 10px;
+	color: #252525;
+}
+.top-nav-collapse .nav > li.snsBtn > a {
+	padding: 5px;
+}
+.top-nav-collapse .nav > li > a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fffff8;
+	z-index: -2;
+}
+.top-nav-collapse .nav > li > a::after {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #ffe600;
+	z-index: -1;
+}
+.top-nav-collapse .nav > li > a:hover::after {
+	width: 100%;
+}
+/*=================搜尋首頁====================*/
+section {
+	min-height: 100%;
+	padding: 100px 0;
+}
+section.searchpage {
+	padding: 150px 0;
+}
+section h2 {
+	font-weight: 600;
+}
+section h3 {
+	font-size: 1.5em;
+	color: #666666;
+	margin-bottom: 15px;
+}
+section .gotop {
+	z-index: 3;
+	position: fixed;
+	bottom: 100px;
+	right: -5px;
+	width: 45px;
+	height: 80px;
+	background-color: #FF8622;
+	border-radius: 5px;
+}
+section .gotop a {
+}
+section .gotop img {
+	display: block;
+	margin: 0 auto;
+	width: 15px;
+	height: 15px;
+	margin: 12px 14px;
+}
+section h1 {
+	font-size: 3em;
+	color: #4D4D4D;
+}
+section hr.l1 {
+	margin: 0;
+}
+section.searchpage input.form-control {
+	display: block;
+	width: 100%;
+	height: 44px;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+section.searchpage .nav-pills > li.col-md-4 {
+	margin-bottom: 5px;
+	margin: 0;
+}
+section.searchpage .nav-pills > li > a.mi {
+	background-color: #2CBBCE;
+}
+section.searchpage .nav-pills > li > a.si {
+	background-color: #24B53F;
+}
+section.searchpage .nav-pills > li > a.fi {
+	background-color: #EFC100;
+}
+section.searchpage .nav-pills > li:hover .mi {
+	background-color: #00AAAA;
+}
+section.searchpage .nav-pills > li:hover .si {
+	background-color: #249329;
+}
+section.searchpage .nav-pills > li:hover .fi {
+	background-color: #DDB303;
+}
+section.searchpage .nav-pills > li > a {
+	border-radius: 0px;
+	position: relative;
+	display: block;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+section.searchpage hr.l2 {
+	margin: 40px 0 20px 0;
+	position: relative;
+}
+section.searchpage hr.l2:after {
+	content: "或";
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	bottom: -20px;
+	left: 48%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background-color: #fff;
+}
+.d1 {
+	position: relative;
+}
+select.dropdown {
+	display: block;
+	width: 100%;
+	height: 44px;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	-webkit-appearance: none;
+}
+.d1:after {
+	display: block;
+	content: '';
+	position: absolute;
+	z-index: 2;
+	top: 18px;
+	right: 16px;
+	width: 0;
+	height: 0;
+	border: 5px dashed;
+	border-color: #000 transparent;
+	pointer-events: none;
+	border-bottom: none;
+}
+/*=================產業別選單頁========================*/
+section.listbtn {
+	padding: 100px 0;
+}
+.listbtn h3 {
+	font-size: 1.5em;
+	color: #666666;
+	margin-bottom: 15px;
+}
+.listbtn .nav-pills > li.col-md-4 {
+	margin-bottom: 5px;
+	margin: 0;
+}
+.listbtn .nav-pills > li.col-md-4.paddingleft {
+	padding-left: 0
+}
+.listbtn .nav-pills > li.col-md-4.paddingright {
+	padding-right: 0
+}
+.listbtn .nav-pills > li > a.mi {
+	background-color: #2CBBCE;
+}
+.listbtn .nav-pills > li > a.si {
+	background-color: #24B53F;
+}
+.listbtn .nav-pills > li > a.fi {
+	background-color: #EFC100;
+}
+.listbtn .nav-pills > li:hover .mi {
+	background-color: #00AAAA;
+}
+.listbtn .nav-pills > li:hover .si {
+	background-color: #249329;
+}
+.listbtn .nav-pills > li:hover .fi {
+	background-color: #DDB303;
+}
+.listbtn .nav-pills > li > a {
+	border-radius: 0px;
+	position: relative;
+	display: block;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.listbtn ul.list-group-item {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0px;
+}
+.listbtn ul.list-group-item > li {
+	float: left;
+}
+.listbtn ul.list-group-item > li > a {
+	display: block;
+	width: 270px;
+	height: 44px;
+	color: #666666;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid;
+	line-height: 40px;
+	font-size: 1.2em;
+	margin: 0 10px 10px 0;
+}
+.listbtn ul.list-group-item > li > a:hover.BB {
+	background-color: #F3FFFF;
+	border-color: #3FAF9F;
+}
+.listbtn ul.list-group-item > li > a:hover.GG {
+	background-color: #F8FFF8;
+	border-color: #24B53F;
+}
+.listbtn ul.list-group-item > li > a:hover.YY {
+	background-color: #FFFCF3;
+	border-color: #EFC100;
+}
+.item {
+	display: none;
+}
+/*=====================rank========================*/
+section.rank h1 {
+	font-size: 3.5em;
+	color: #4D4D4D;
+}
+section.rank hr.l1 {
+	margin: 0;
+}
+section.rank input.form-control {
+	height: 44px;
+}
+section.rank .noresult {
+	margin-top: 30px;
+}
+section.rank .noresult p {
+	text-align: center;
+	font-size: 1.2em;
+	color: #B2B2B2;
+}
+section.rank .noresult img {
+	width: 25px;
+	height: 25px;
+}
+/*=====================breadcrumb========================*/
+section.listbtn .breadcrumb {
+	padding: 8px 0px;
+	margin-bottom: -15px;
+	list-style: none;
+}
+/*=====================頁尾========================*/
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #f5f5f5;
+}
+footer > h6 {
+	padding: 15px 0;
+	color: #999;
+	font-size: 12px;
+	font-weight: 300;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+nav a.navbar-brand {
+	padding: 12px 0;
+}
+section.searchpage .nav-pills > li > a {
+	margin: 0 12px 0 0;
+}
+section.searchpage ul.list-group-item > li > a {
+	margin: 0 10px 10px 0;
+}
+}
+@media screen and (max-width:767px) {
+section {
+	padding: 100px 0;
+}
+section.rank h1 {
+	font-size: 2.1em;
+	font-weight: 600;
+}
+section.searchpage {
+	padding: 55px 0;
+}
+section.listbtn {
+	padding: 55px 0;
+}
+section.searchpage hr.l2 {
+	margin: 30px 0 10px 0;
+}
+section h3 {
+	font-size: 1.3em;
+	color: #666666;
+	margin-bottom: 4px;
+}
+section .gotop {
+	bottom: 60px;
+}
+/*=======iris navbar=======*/
+.top-nav-collapse .navbar-header,
+.top-nav-collapse .navbar-collapse {
+		/*background-color:rgba(0,0,0,.6);*/
+		background-color:rgb(113, 113, 113);
+	}
+.top-nav-collapse .nav > li > a {
+		background-color: #fffff8;
+	}
+	.top-nav-collapse .navbar-brand {
+		padding: 15px 15px;
+	}
+	nav.navbar .nav {
+		text-align: center;
+	}
+	nav.navbar .nav > li {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	nav.navbar .nav > li > a {
+		border: 2px solid #252525;
+		padding: 5px 10px;
+		color: #252525;
+	}
+	nav.navbar .nav > li.snsBtn > a {
+		padding: 5px;
+	}
+	nav.navbar .nav > li > a::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fffff8;
+		z-index: -2;
+	}
+	nav.navbar .nav > li > a::after {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: #ffe600;
+		z-index: -1;
+	}
+	nav.navbar .nav > li > a:hover::after {
+		width: 100%;
+	}	
+nav a.navbar-brand {
+	padding: 12px 15px;
+}	
+section.searchpage .nav-pills > li.col-md-4 {
+	margin-left: 0px;
+}
+section.listbtn .breadcrumb {
+	padding: 10px 0px;
+	margin-bottom: 0px;
+}
+section.listbtn ul.list-group-item > li > a {
+	width: clac( 50% - 10px);
+}
+section.searchpage h1 {
+	font-size: 2.1em;
+	text-align: left;
+	font-weight: 600;
+}
+section.searchpage .nav-pills > li.col-md-4.paddingleft {
+	padding-left: 15px;
+}
+section.searchpage .nav-pills > li.col-md-4.paddingright {
+	padding-right: 15px;
+}
+footer > h6 {
+	line-height: 1.3em;
+}
+}
+ @media screen and (max-width:320px) {
+section {
+	padding: 75px 0;
+}
+section h3 {
+	font-size: 1.2em;
+}
+section .gotop {
+	bottom: 20px;
+}
+section.searchpage .nav-pills > li.col-md-4 {
+	margin-left: 0px;
+}
+.listbtn .nav-pills > li > a {
+	margin-bottom: 5px;
+	padding: 8px;
+}
+.listbtn ul.list-group-item > li > a {
+	width: calc( 50% - 10px );
+}
+section.searchpage input.form-control {
+	font-size: .9em;
+}
+section.searchpage h1 {
+	font-size: 2.1em;
+	text-align: left;
+}
+section.searchpage .nav-pills > li.col-md-4.paddingleft {
+	padding-left: 15px;
+}
+section.searchpage .nav-pills > li.col-md-4.paddingright {
+	padding-right: 15px;
+}
+footer > h6 {
+	line-height: 1.3em;
+}
+}
+/*==============================iris edit=====================================*/
+ul.tab-table, ul.listInfo {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	font-size: 14px;
+	line-height: 1.25;
+}
+ul.tab-table {
+	display: table;
+	margin-top: 1em;
+}
+ul.tab-table > li {
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+ul.tab-table > li:nth-child(even) {
+	background-color: #f7f7f7;
+}
+ul.tab-table > li.theader, ul.tab-table > li.theader a {
+	display: block;
+	color: #fff;
+}
+ul.tab-table > li.theader {
+	display: list-item;
+	/*width: 1140px;*/
+	background-color: #808080;
+}
+ul.tab-table.mi > li {
+	border-color: #2CBBCE;
+}
+ul.tab-table.mi > li:nth-child(even) {
+	background-color: #f3ffff;
+}
+ul.tab-table.mi > li.theader {
+	background-color: #2CBBCE;
+}
+ul.tab-table.mi > li .tab-tableCell + .tab-tableCell, ul.tab-table.mi > li .tab-tableCellGroup + .tab-tableCellGroup {
+	border-color: #2CBBCE;
+}
+ul.tab-table.si > li {
+	border-color: #24b53f;
+}
+ul.tab-table.si > li:nth-child(even) {
+	background-color: #f8fef9;
+}
+ul.tab-table.si > li.theader {
+	background-color: #24b53f;
+}
+ul.tab-table.si > li .tab-tableCell + .tab-tableCell, ul.tab-table.si > li .tab-tableCellGroup + .tab-tableCellGroup {
+	border-color: #24b53f;
+}
+ul.tab-table.fi > li {
+	border-color: #EFC100;
+}
+ul.tab-table.fi > li:nth-child(even) {
+	background-color: #fffdf6;
+}
+ul.tab-table.fi > li.theader {
+	background-color: #EFC100;
+}
+ul.tab-table.fi > li .tab-tableCell + .tab-tableCell, ul.tab-table.fi > li .tab-tableCellGroup + .tab-tableCellGroup {
+	border-color: #EFC100;
+}
+ul.listInfo > li.moreBtn {
+	line-height: 37px;
+	color: #808080;
+	background-color: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+ul.listInfo > li + li {
+	padding: 10px 0;
+	color: #cbcbcb;
+	font-size: 14px;
+}
+ul.tab-table > li .tab-tableCellGroup {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+ul.tab-table > li .tab-tableCellGroup .tab-tableCell {
+	display: table-cell;
+	vertical-align: middle;
+	height: 37px;
+	min-height: 37px;
+	padding: 5px 10px;
+}
+ul.tab-table > li .tab-tableCell + .tab-tableCell, ul.tab-table > li .tab-tableCellGroup + .tab-tableCellGroup {
+	border-left: 1px solid #ddd;
+}
+span {
+	display: inline-block;
+}
+span.unit {
+	display: block;
+	font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 84px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 168px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 {
+ width: 106px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 {
+ width: 91px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-06 {
+ width: 120px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-07 {
+ width: 111px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-08 {
+ width: 155px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-09 {
+ width: 106px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 {
+ width: 110px;
+}
+ .tab-table .theader .tab-tableCellGroup .tab-tableCell a > span {
+ position: relative;
+ padding-right: 15px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01 a > span,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 a > span {
+ width: 50px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 a > span,  .tab-table .tab-tableCellGroup .tab-tableCell.col-09 a > span {
+ width: 75px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 a > span {
+ width: 60px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-06 a > span {
+ width: 90px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-07 a > span {
+ width: 80px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell a > span > span.sort {
+ position: absolute;
+ top: 50%;
+ right: 0;
+ margin-top: -10px;
+}
+}
+ul.tab-table > li.theader {
+	cursor: pointer;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell a > span > span.sort {
+	width: 15px;
+	height: 20px;
+	background: url(../img/arrows-w.png) center no-repeat;
+	background-size: contain;
+	transition: .0s;
+}
+/*.tab-table .tab-tableCellGroup .tab-tableCell:active a > span > span.sort, .tab-table .tab-tableCellGroup .tab-tableCell.sorting a > span > span.sort {
+	background: url(../img/arrows-b.png) center no-repeat;
+	background-size: contain;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell.sorting.re a > span > span.sort {
+	background: url(../img/arrows-b.png) center no-repeat;
+	background-size: contain;
+	transform: rotate(180deg);
+}*/
+/*.tab-table .tab-tableCellGroup .tab-tableCell.sorting:hover > span > span.sort {
+	transform: rotate(0deg);
+}*/
+.tab-table .tab-tableCellGroup .tab-tableCell.col-010 a {
+	display: block;
+	font-size: 22px;
+	color: #69dbe0;
+}
+ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-04, ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-05, ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-06, ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-07, ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-08, ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-09, ul.tab-table > li .tab-tableCellGroup .tab-tableCell.col-10 {
+	text-align: right;
+}
+ @media screen and (min-width: 768px) {
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 a {
+ display: block;
+ padding: 5px 10px;
+ font-size: 14px;
+ color: #fff;
+ background-color: #69dbe0;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 a:hover {
+ background-color: #57B5B5;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 a span.desktopHidden {
+ display: none;
+}
+}
+ @media screen and (max-width: 1199px) {
+ ul.tab-table li .tab-tableCellGroup .tab-tableCell > span {
+ display: inline-block;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell > span > span.sort {
+ display: block;
+ margin: 5px auto;
+}
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+ ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+ padding: 5px 10px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 65px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 140px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 {
+ width: 85px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 {
+ width: 70px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-06 {
+ width: 100px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-07 {
+ width: 90px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-08 {
+ width: 125px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-09 {
+ width: 85px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 {
+ width: 110px;
+}
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+ ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+ padding: 5px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 50px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 101px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 {
+ width: 80px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 {
+ width: 60px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-06 {
+ width: 65px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-07 {
+ width: 90px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-08 {
+ width: 80px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-09 {
+ width: 50px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 {
+ width: 90px;
+}
+}
+@media screen and (max-width: 767px) {
+ul.tab-table, ul.listInfo {
+	font-size: 12px;
+}
+ ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+ padding: 5px 10px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 64px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 240px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 {
+ width: 110px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 {
+ width: 75px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 {
+ width: 70px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell span.unit {
+ display: inline-block;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-08 a > span > span {
+ display: block;
+ margin: auto;
+}
+ ul.tab-table li .tab-tableCellGroup.mobileHidden,  ul.tab-table li .tab-tableCellGroup a span.mobileHidden {
+ display: none;
+}
+}
+@media screen and (max-width: 575px) {
+ ul.tab-table {
+ width: auto;
+ margin: auto;
+}
+ ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+ padding: 5px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 50px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 110px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 {
+ width: 70px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 {
+ width: 60px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 {
+ width: 30px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 .mobileHidden {
+ display: none;
+}
+}
+@media screen and (max-width: 413px) {
+ ul.tab-table {
+ width: auto;
+ margin: auto;
+ font-size: 12px;
+}
+ ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+ padding: 2px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 45px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 75px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-04 {
+ width: 60px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-05 {
+ width: 55px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-010 {
+ width: 25px;
+}
+}
+@media screen and (max-width: 320px) {
+.tab-table .tab-tableCellGroup .tab-tableCell.col-01,  .tab-table .tab-tableCellGroup .tab-tableCell.col-02 {
+ width: 38px;
+}
+ .tab-table .tab-tableCellGroup .tab-tableCell.col-03 {
+ width: 60px;
+}
+}

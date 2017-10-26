@@ -1,0 +1,813 @@
+/* CSS Document */
+/* Fonts 樣式 */
+@import "http://fonts.googleapis.com/earlyaccess/notosanstc.css";
+* {
+	transition: .3s;
+}
+html {
+}
+body {
+	position: relative;
+	min-height: 100vh;
+	font-family: Arial, "微軟正黑體", "繁黑體", 'Microsoft JhengHei', 'Microsoft YaHei', 'Heiti TC', 'LiHei Pro', sans-serif, "新細明體", PMingLiU;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	text-align: justify;
+	overflow-x: hidden;
+	/* Margin bottom by footer height */
+	padding-bottom: 60px;
+}
+/*=================顏色========================*/
+
+section.mi h3 span {
+	background-color: #2CBBCE;
+	padding: 5px;
+}
+section.mi h4 {
+	color: #2CBBCE;
+}
+section.mi .t1 .table > tbody > tr {
+	background-color: #F3FFFF;
+}
+section.mi .table > tbody > tr > th {
+	border: 1px solid #3FAF9F;
+}
+section.mi .article .a1more p {
+	color: #2CBBCE;
+	background-color: #E8F9F9;
+}
+section.mi ul.tableTitle,
+section.mi ul.annual-in {
+	border: 1px solid #3FAF9F;
+	border-left: 0px;
+}
+section.mi ul.tableTitle {
+	border-left: 1px solid #3FAF9F;
+	background-color: #F3FFFF;
+}
+section.mi ul.tableTitle > li,
+section.mi ul.annual-in > li {
+    border-top: 1px solid #3FAF9F;	
+}
+
+section.fi h3 span {
+	background-color: #24B53F;
+}
+section.fi h4 {
+	color: #24B53F;
+}
+section.fi .t1 .table > tbody > tr {
+	background-color: #F8FFF8;
+}
+section.fi .table > tbody > tr > td, section.fi .table > tbody > tr > th {
+	border: 1px solid #1C822A;
+}
+section.fi .article .a1more p {
+	color: #1C822A;
+	background-color: #F8FFF8;
+}
+section.fi ul.tableTitle,
+section.fi ul.annual-in {
+	border: 1px solid #1C822A;
+	border-left: 0px;
+}
+section.fi ul.tableTitle > li,
+section.fi ul.annual-in > li {
+    border-top: 1px solid #1C822A;
+}
+
+section.si h3 span {
+	background-color: #EFC100;
+}
+section.si h4 {
+	color: #EFC100;
+}
+section.si .t1 .table > tbody > tr {
+	background-color: #FFFCF3;
+}
+section.si .table > tbody > tr > td, section.si .table > tbody > tr > th {
+	border: 1px solid #EFC100;
+}
+section.si .article .a1more p {
+	color: #EFC100;
+	background-color: #FFFCF3;
+}
+section.si ul.tableTitle,
+section.si ul.annual-in {
+	border: 1px solid #EFC100;
+	border-left: 0px;
+}
+section.si ul.tableTitle > li,
+section.si ul.annual-in > li {
+    border-top: 1px solid #EFC100;
+}
+/*=================NAVBAR========================*/
+nav#irisbar .container {
+	position: relative;
+	font-weight: 400;
+}
+#irisbar .navbar-brand img {
+	width: 84px;
+	height: auto;
+}
+#irisbar .nav > li > a {
+	color: #000;
+}
+@media (max-width: 767px) {
+#irisbar .navbar-header::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.navbar{
+		background-color:#777777;
+	}		
+}
+@media (min-width: 768px) {
+#irisbar .navbar-brand {
+		position: absolute;
+		top: 0;
+		left: 15px;
+		padding: 16px 15px;
+		background-color: #d60c18;
+	}
+#irisbar .nav li {
+		padding: 10px 7.5px;
+	}
+#irisbar .nav > li > a {
+		position: relative;
+		padding-left: 5px;
+		padding-right: 5px;
+/*		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;*/
+	}
+#irisbar .nav > li > a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 3px;
+		transition: width 0.3s;
+		background-color: #ffe600;
+	}
+#irisbar .nav > li > a:hover {
+		color:#ffe600;
+	}
+#irisbar .nav > li > a:hover::after {
+		width: 100%;
+	}
+	/*.nav li.snsBtn {
+		padding: 29px 0px;
+	}
+	.nav > li.snsBtn > a {
+		padding: 2px 0;
+	}*/
+}
+#irisbar .navbar-nav > li > a {
+    line-height: 25px;
+}
+.top-nav-collapse{
+	background-color:rgb(113, 113, 113); 
+}
+.top-nav-collapse .navbar-brand {
+	padding: 35px 15px;
+}
+.top-nav-collapse .nav > li > a {
+	border: 2px solid #252525;
+	padding: 5px 10px;
+	color: #252525;
+}
+.top-nav-collapse .nav > li.snsBtn > a {
+	padding: 5px;
+}
+.top-nav-collapse .nav > li > a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fffff8;
+	z-index: -2;
+}
+.top-nav-collapse .nav > li > a::after {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #ffe600;
+	z-index: -1;
+}
+.top-nav-collapse .nav > li > a:hover::after {
+	width: 100%;
+}
+/*=================COMPANY====================*/
+section {
+	height: 100%;
+	margin: 100px 0;
+}
+section .gotop {
+	z-index: 3;
+	position: fixed;
+	bottom: 100px;
+	right: -5px;
+	width: 45px;
+	height: 80px;
+	background-color: #FF8622;
+	border-radius: 5px;
+}
+section .gotop a {
+}
+section .gotop img {
+	display: block;
+	margin: 0 auto;
+	width: 15px;
+	height: 15px;
+	margin: 12px 14px;
+}
+section.company ul.basic > li {
+	font-size: 1.1em;
+}
+section hr.l1 {
+	margin: 0;
+}
+section .info h3 {
+	font-size: 1.5em;
+	color: #fff;
+}
+section .info h4 {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+section .info h5 {
+	color: #999999;
+	margin-top: 5px;
+}
+section.company h1 {
+	font-size: 3em;
+	color: #4D4D4D;
+	line-height: .8em;
+	margin-bottom: 8px;
+}
+section.company ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+section.company li {
+	text-decoration: none;
+}
+section.company p {
+	font-size: 1.1em;
+}
+section .table > tbody > tr > td, section .table > tbody > tr > th {
+	font-size: 1.1em;
+}
+
+
+/*=================INFOTABLE========================*/
+section .forminfor {
+	position: relative;
+}
+section .forminfor h3 {
+	color: #fff;
+	font-size: 1.5em;
+}
+section .forminfor .col-md-3.paddingright {
+	padding-right: 0px;
+}
+section .forminfor .col-md-9.paddingleft {
+	padding-left: 0px;
+}
+section .forminfor .slider {
+	display: none;
+}
+section .table > tbody > tr > td {
+	text-align: center;
+	font-size: 1.1em;
+}
+section ul.annual-in > li .tab-tableCell {
+	text-align: right;
+	padding: 8px 20px;
+}
+section ul.tableTitle > li .tab-tableCell {
+	text-align: left;
+	padding: 8px;
+}
+section ul.tableTitle,
+section ul.annual-in {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	border: 1px solid #666;
+	border-left: 0px;
+	line-height: 21px;
+}
+section ul.tableTitle {
+	width: 100%;
+/*	font-size: 1.1em;*/
+	font-weight: bold;
+}
+/*
+section ul.tableTitle > li,
+section ul.annual-in > li {
+	border-top: 1px solid #666;
+}
+*/
+section ul.tableTitle > li.top,
+section ul.annual-in > li.top {
+	border-top: 0;
+}
+
+/*=================ARTICLE========================*/
+section.company .article h3 {
+	color: #666666;
+}
+section.company .a1 {
+	padding: 15px 0;
+}
+section.company .a1 a{
+	display: block;
+	height: auto;
+	text-decoration: none;
+}
+section.company .a1 h2 {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 1.5em;
+	text-align: justify;
+	color: #4D4D4D;
+	font-weight: 700;
+}
+section.company .a1 p {
+	font-size: 1em;
+	line-height: 1.4em;
+	color: #898989;
+}
+section.company .a1 time {
+	color: #898989;
+	font-weight: 400;
+}
+section.company .a1 img {
+	width: 100%;
+	min-height: 176px;
+	overflow: hidden;
+	}
+section.company .article .a1more {
+	width: 100%;
+	height: 60px;
+	background-color: #154893;
+	cursor: pointer;
+}
+section.company .article .a1more p {
+	text-align: center;
+	line-height: 60px;
+	letter-spacing: 2px;
+}
+section.company .article ul > li {
+	float: left;
+	}
+section.company .article ul > li > a {
+	display: block;
+	height: 60px;
+	background-color: #6D6D6D;
+	line-height: 60px;
+	text-decoration: none;
+	margin-top: 20px;
+	border-radius: 0px;
+}
+section.company .article ul > li > a:hover {
+	background-color: #2D2D2D;
+}
+section.company .article ul > li > a > p {
+	text-align: center;
+	color: #FFFFFF;
+}
+section.company .article ul > li > a img {
+	width: 24px;
+	height: 24px;
+	padding-right: 5px;
+}
+section.company .article a:hover .btn {
+	color: #fff;
+	background-color: #777777;
+}
+section.company .article .UU {
+	margin-right: 30px;
+}
+section.company .article .HH {
+	margin-left: 30px;
+}
+section.company .forminfor .tip p {
+	display: none;
+}
+section.company .article .pic {
+	width: 100%;
+	background: #777777 no-repeat center center;
+	overflow: hidden;
+}
+/*=====================頁尾========================*/
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #f5f5f5;
+}
+footer>h6 {
+	padding: 15px 0;
+	color: #999;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+
+/*=====================平版========================*/
+/*=====================手機========================*/
+@media screen and (max-width:767px) {
+section {
+	margin: 70px 0;
+}
+section .gotop {
+	bottom: 60px;
+}
+section.company h1 {
+	font-size: 2.8em;
+}
+section .info h3 {
+	font-size: 1.2em;
+}
+section .info h4 {
+	font-size: 1.2em;
+}
+section .info h5 {
+	margin-top: 3px;
+}
+/*section.company ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 330px;
+}*/
+section.company li {
+	text-decoration: none;
+	font-size: .95em;
+}
+section.company p {
+	font-size: 1.1em;
+}
+nav a.navbar-brand {
+	padding: 12px 15px;
+}
+section.company .article .a1more {
+	margin-top: 20px;
+}
+section.company .a1 h2 {
+	margin-top: 20px;
+}
+section.company .article a .btn {
+	width: 100%;
+}
+section.company .article .UU {
+	margin-right: 0px;
+}
+section.company .article .HH {
+	margin-left: 0px;
+}
+section .forminfor h3 {
+	font-size: 1.2em;
+}
+section .article ul > li > a > p {
+	font-size: .9em;
+}
+section .forminfor .arrow-left, section .forminfor .arrow-right {
+	display: block;
+	position: absolute;
+	top: 15%;
+	margin-top: -25px;
+	height: 15px;
+	width: 15px;
+	z-index: 2;
+	cursor: pointer;
+	left: 215px;
+	background: url("../img/left.svg") no-repeat center center;
+}
+section .forminfor .arrow-right {
+	right: 25px;
+	left: auto;
+	background-image: url("../img/right.svg");
+}
+section.company .forminfor .tip p {
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	color: #9a9a9a;
+	font-size: .9em;
+	font-weight: 600;
+	margin: 0;
+}
+section .t1 .table > tbody > tr {
+	font-size: .9em;
+}
+section.company .a1 h2 {
+	margin-top: 20px;
+}
+
+/*============Jessica edit============*/	
+::-webkit-scrollbar {
+ -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+ width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+ height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: rgba(0, 0, 0, .5);
+ border-radius: 10px;
+ border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+ border-radius: 10px;
+ background-color: #ffffff;
+}
+#container {
+	width: 50%;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	white-space: nowrap;
+	position: relative;
+}
+.tableMobile {
+	width: 1000px;
+	max-width: 1000px;
+	margin-bottom: 0px;
+}
+}
+
+@media screen and (max-width:320px) {
+nav a.navbar-brand {
+	padding: 12px 15px;
+}
+section {
+	margin: 65px 0;
+}
+section .gotop {
+	bottom: 20px;
+}
+section.company h1 {
+	font-size: 2.1em;
+}
+section.company h5 {
+	margin-bottom: 0;
+}
+section .table > tbody > tr > td, section .table > tbody > tr > th {
+	font-size: .8em;
+}
+section .table > tbody > tr > td {
+	font-size: .8em;
+}
+section .forminfor .arrow-left, section .forminfor .arrow-right {
+	left: 185px;
+}
+section .forminfor .arrow-right {
+	right: 10px;
+	left: auto;
+}
+section .forminfor .arrow-left, section .forminfor .arrow-right {
+	top: 14.5%;
+}
+}
+/*==============================iris edit=====================================*/
+
+ul.tab-table > li .tab-tableCell + .tab-tableCell, ul.tab-table > li .tab-tableCellGroup + .tab-tableCellGroup {
+	border-left: 1px solid #ddd;
+}
+span {
+	display: inline-block;
+}
+span.unit {
+	display: block;
+	font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+section ul.tableTitle,
+section ul.annual-in {
+	width: 286px;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell > span {
+	position: relative;
+	padding-right: 15px;
+}
+section ul.annual-in > li .tab-tableCell {
+	padding: 8px 115px;
+}
+}
+
+@media (min-width: 768px) {
+.tab-table .tab-tableCellGroup .tab-tableCell.col-010 a {
+	display: block;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #69dbe0;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell.col-010 a:hover {
+	background-color: #57B5B5;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell.col-010 a span.desktopHidden {
+	display: none;
+}
+section.company .a1 img {
+    width: 100%;
+    min-height: 185px;
+    overflow: hidden;
+}
+section.company .a1 h2 {
+    margin: 0;
+	margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+	line-height: 1.3;
+    text-align: justify;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+}
+
+@media (max-width: 1199px) {
+ul.tab-table li .tab-tableCellGroup .tab-tableCell > span {
+	display: inline-block;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell > span > span.sort {
+	display: block;
+	margin: 5px auto;
+}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+	padding: 5px 10px;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell.col-01 {
+	width: 237px;
+}
+section ul.tableTitle,
+section ul.annual-in {
+	width: 237px;
+}
+section ul.annual-in > li .tab-tableCell {
+	padding: 8px 40px;
+}
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+	padding: 5px;
+}
+.tab-table .tab-tableCellGroup .tab-tableCell.col-01 {
+	width: 200px;
+}
+section ul.annual-in {
+	width: 120px;
+}
+section ul.annual-in > li .tab-tableCell {
+	padding:8px 30px;
+}
+}
+
+@media (max-width: 767px) {
+/*=======iris navbar=======*/
+.top-nav-collapse .navbar-header,
+.top-nav-collapse .navbar-collapse {
+		/*background-color:rgba(0,0,0,.6);*/
+		background-color:rgb(113, 113, 113);
+	}
+.top-nav-collapse .nav > li > a {
+		background-color: #fffff8;
+	}
+	.top-nav-collapse .navbar-brand {
+		padding: 15px 15px;
+	}
+	nav.navbar .nav {
+		text-align: center;
+	}
+	nav.navbar .nav > li {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	nav.navbar .nav > li > a {
+		border: 2px solid #252525;
+		padding: 5px 10px;
+		color: #252525;
+	}
+	nav.navbar .nav > li.snsBtn > a {
+		padding: 5px;
+	}
+	nav.navbar .nav > li > a::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fffff8;
+		z-index: -2;
+	}
+	nav.navbar .nav > li > a::after {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: #ffe600;
+		z-index: -1;
+	}
+	nav.navbar .nav > li > a:hover::after {
+		width: 100%;
+	}	
+ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+	padding: 5px 10px;
+	height: 33px;
+}
+section.company .tableMobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 195px;
+}
+section.company .article ul {
+	margin: 0 auto;
+    width: 480px;
+}
+section ul.tableTitle > li,
+section ul.annual-in > li{
+	padding: 0;
+}
+section ul.tableTitle > li .tab-tableCell {
+	padding: 8px;
+}
+section ul.annual-in > li .tab-tableCell {
+	padding: 8px 72px;
+}
+
+}
+
+@media (max-width: 575px) {
+ul.tab-table {
+	margin: auto;
+}
+ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+	padding: 5px;
+}
+section.company > ul {
+    width: 250px;
+}
+section.company .article ul {
+    width: 400px;
+}
+
+}
+
+@media (max-width: 413px) {
+ul.tab-table {
+	margin: auto;
+}
+ul.tab-table li .tab-tableCellGroup .tab-tableCell {
+	padding: 5px;
+}
+section.company ul {
+    width: 195px;
+}
+section.company .article ul {
+    width: 370px;
+}
+}
+@media (max-width: 320px) {
+section.company .tableMobile ul {
+    width: 145px;
+}
+section ul.tableTitle > li .tab-tableCell{
+    padding: 7px 2px;
+}
+section ul.annual-in > li .tab-tableCell {
+    padding: 7px 50px;
+}		
+section.company .article ul {
+    width: 320px;
+}
+
+}

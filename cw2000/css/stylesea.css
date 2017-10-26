@@ -1,0 +1,498 @@
+/* CSS Document */
+/* Fonts 樣式 */
+@import "http://fonts.googleapis.com/earlyaccess/notosanstc.css";
+* {
+	transition: .3s;
+}
+html {
+}
+body {
+	position: relative;
+	min-height: 100vh;
+	font-family: Arial, "微軟正黑體", "繁黑體", 'Microsoft JhengHei', 'Microsoft YaHei', 'Heiti TC', 'LiHei Pro', sans-serif, "新細明體", PMingLiU;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	overflow-x: hidden;
+	/* Margin bottom by footer height */
+	padding-bottom: 60px;
+}
+/*=================NAVBAR========================*/
+nav#irisbar .container {
+	position: relative;
+	font-weight: 400;
+}
+#irisbar .navbar-brand img {
+	width: 84px;
+	height: auto;
+}
+#irisbar .nav > li > a {
+	color: #000;
+}
+@media (max-width: 767px) {
+#irisbar .navbar-header::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.navbar{
+		background-color:#777777;
+	}		
+}
+@media (min-width: 768px) {
+#irisbar .navbar-brand {
+		position: absolute;
+		top: 0;
+		left: 15px;
+		padding: 16px 15px;
+		background-color: #d60c18;
+	}
+#irisbar .nav li {
+		padding: 10px 7.5px;
+	}
+#irisbar .nav > li > a {
+		position: relative;
+		padding-left: 5px;
+		padding-right: 5px;
+/*		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;*/
+	}
+#irisbar .nav > li > a::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 3px;
+		transition: width 0.3s;
+		background-color: #ffe600;
+	}
+#irisbar .nav > li > a:hover {
+		color:#ffe600;
+	}
+#irisbar .nav > li > a:hover::after {
+		width: 100%;
+	}
+	/*.nav li.snsBtn {
+		padding: 29px 0px;
+	}
+	.nav > li.snsBtn > a {
+		padding: 2px 0;
+	}*/
+}
+#irisbar .navbar-nav > li > a {
+    line-height: 25px;
+}
+.top-nav-collapse{
+	background-color:rgb(113, 113, 113); 
+}
+.top-nav-collapse .navbar-brand {
+	padding: 35px 15px;
+}
+.top-nav-collapse .nav > li > a {
+	border: 2px solid #252525;
+	padding: 5px 10px;
+	color: #252525;
+}
+.top-nav-collapse .nav > li.snsBtn > a {
+	padding: 5px;
+}
+.top-nav-collapse .nav > li > a::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fffff8;
+	z-index: -2;
+}
+.top-nav-collapse .nav > li > a::after {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #ffe600;
+	z-index: -1;
+}
+.top-nav-collapse .nav > li > a:hover::after {
+	width: 100%;
+}
+/*=================搜尋首頁====================*/
+section {
+	min-height: 100%;
+	padding: 100px 0;
+}
+section h2{
+	font-weight: 600;
+}
+section h3 {
+	font-size: 1.5em;
+	color: #666666;
+	margin-bottom: 15px;
+}
+section .gotop {
+	z-index: 3;
+	position: fixed;
+	bottom: 100px;
+	right: -5px;
+	width: 45px;
+	height: 80px;
+	background-color: #FF8622;
+	border-radius: 5px;
+}
+section .gotop a {
+}
+section .gotop img {
+	display: block;
+	margin: 0 auto;
+	width: 15px;
+	height: 15px;
+	margin: 12px 14px;
+}
+section.search h1 {
+	font-size: 3.5em;
+	color: #4D4D4D;
+}
+section hr.l1 {
+	margin: 0;
+}
+section.search input.form-control {
+	display: block;
+	width: 100%;
+	height: 44px;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+section.search .nav-pills > li.col-md-4 {
+	margin-bottom: 5px;
+	margin: 0;
+}
+section.search .nav-pills > li.col-md-4.paddingleft {
+	padding-left: 0
+}
+section.search .nav-pills > li.col-md-4.paddingright {
+	padding-right: 0
+}
+section.search .nav-pills > li > a.mi {
+	background-color: #2CBBCE;
+}
+section.search .nav-pills > li > a.si {
+	background-color: #24B53F;
+}
+section.search .nav-pills > li > a.fi {
+	background-color: #EFC100;
+}
+section.search .nav-pills > li > a {
+	border-radius: 0px;
+	position: relative;
+	display: block;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+section.search .nav-pills > li:hover .mi {
+	background-color: #00AAAA;
+}
+section.search .nav-pills > li:hover .si {
+	background-color: #38a63d;
+}
+section.search .nav-pills > li:hover .fi {
+	background-color: #DDB303;
+}
+section.search .nav-pills > li.active .mi {
+	background-color: #00AAAA;
+}
+section.search .nav-pills > li.active .si {
+	background-color: #38a63d;
+}
+section.search .nav-pills > li.active .fi {
+	background-color: #DDB303;
+}
+.mi:focus {
+	background-color: #00AAAA !important;
+}
+.si:focus {
+	background-color: #38a63d !important;
+}
+ .fi:focus {
+	background-color: #DDB303 !important;
+}
+
+/*=================產業別選單頁========================*/
+section.search h3 {
+	font-size: 1.5em;
+	color: #666666;
+	margin-bottom: 15px;
+}
+section.search .nav-pills > li.col-md-4 {
+	margin-bottom: 15px;
+}
+section.search .nav-pills > li.col-md-4.paddingleft {
+	padding-left: 0
+}
+section.search .nav-pills > li.col-md-4.paddingright {
+	padding-right: 0
+}
+section.search .nav-pills > li > a.mi {
+	background-color: #BCE7E8;
+}
+section.search .nav-pills > li > a.si {
+	background-color: #BFE2C2;
+}
+section.search .nav-pills > li > a.fi {
+	background-color: #E5DEBE;
+}
+section.search .nav-pills > li:hover .mi {
+	background-color: #00AAAA;
+}
+section.search .nav-pills > li:hover .si {
+	background-color: #38a63d;
+}
+section.search .nav-pills > li:hover .fi {
+	background-color: #DDB303;
+}
+section.search ul.list-group-item {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0px;
+}
+section.search ul.list-group-item > li {
+	float: left;
+	cursor: pointer;
+}
+section.search ul.list-group-item > li > a {
+	display: block;
+	height: 44px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 44px;
+	font-size: 1.2em;
+	margin: 0 0 20px 0;
+}
+section.search ul.BB > li > a {
+	color: #2CBBCE;
+	border: 1px solid #2CBBCE;
+}
+section.search ul.GG > li > a {
+	color: #24B53F;
+	border: 1px solid #24B53F;
+}
+section.search ul.YY > li > a {
+	color: #EFC100;
+	border: 1px solid #EFC100;
+}
+section.search ul.BB > li > a:hover {
+	background-color: #F3FFFF;
+	border: 2px solid #2CBBCE;
+}
+section.search ul.GG > li > a:hover {
+	background-color: #F8FFF8;
+	border: 2px solid #24B53F;
+}
+section.search ul.YY > li > a:hover {
+	background-color: #FFFCF3;
+	border: 2px solid #EFC100;
+}
+section.search ul > li > span > a {
+	display: block;
+	height: 44px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	line-height: 44px;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+section.search ul.BB > li > span > a {
+	background-color:#79DDE2;
+	border: 1px solid #2CBBCE;
+}
+
+section.search ul.BB > li > span > a:hover {
+	color: #2CBBCE;
+	background-color: #F3FFFF;
+	border: 2px solid #2CBBCE;
+}
+section.search ul.GG > li > span > a {
+	background-color:#8DE28D;
+	border: 1px solid #24B53F;
+}
+
+section.search ul.GG > li > span > a:hover {
+	color: #24B53F;
+	background-color: #F3FFFF;
+	border: 2px solid #24B53F;
+}
+section.search ul.YY > li > span > a {
+	background-color:#EDD777;
+	border: 1px solid #EFC100;
+}
+
+section.search ul.YY > li > span > a:hover {
+	color: #EDD777;
+	background-color: #FFFCF3;
+	border: 2px solid #EFC100;
+}
+
+/*=====================頁尾========================*/
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #f5f5f5;
+}
+footer>h6 {
+	padding: 15px 0;
+	color: #999;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+nav a.navbar-brand {
+	padding: 12px 0;
+}
+section.search .nav-pills > li > a {
+	margin: 0 12px 0 0;
+}
+section.search ul.list-group-item > li > a {
+	margin: 0 10px 10px 0;
+}
+}
+
+@media screen and (max-width:767px) {
+/*=======iris navbar=======*/
+.top-nav-collapse .navbar-header,
+.top-nav-collapse .navbar-collapse {
+		/*background-color:rgba(0,0,0,.6);*/
+		background-color:rgb(113, 113, 113);
+	}
+.top-nav-collapse .nav > li > a {
+		background-color: #fffff8;
+	}
+	.top-nav-collapse .navbar-brand {
+		padding: 15px 15px;
+	}
+	nav.navbar .nav {
+		text-align: center;
+	}
+	nav.navbar .nav > li {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	nav.navbar .nav > li > a {
+		border: 2px solid #252525;
+		padding: 5px 10px;
+		color: #252525;
+	}
+	nav.navbar .nav > li.snsBtn > a {
+		padding: 5px;
+	}
+	nav.navbar .nav > li > a::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fffff8;
+		z-index: -2;
+	}
+	nav.navbar .nav > li > a::after {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: #ffe600;
+		z-index: -1;
+	}
+	nav.navbar .nav > li > a:hover::after {
+		width: 100%;
+	}	
+nav a.navbar-brand {
+	padding: 12px 15px;
+}
+section{
+	padding: 55px 0;
+}	
+section .gotop {
+    bottom: 60px;
+}
+section.search .nav-pills > li.col-md-4 {
+	margin-left: 0px;
+}
+.listbtn ul.list-group-item > li > a {
+	width: clac( 50% - 10px);
+}
+section.search .nav-pills > li.col-md-4 {
+	margin-bottom: 5px;
+}
+section.search ul.list-group-item > li > a {
+	margin: 0 0 8px 0;
+	font-size: 14px;
+}
+section.search ul > li > span > a {
+	font-size: 14px;
+}
+section.search .nav-pills > li > a {
+    font-size: 1.3em;
+}
+section.search h3 {
+    font-size: 1.3em;
+    color: #666666;
+    margin-bottom: 4px;
+}
+section.search h1 {
+	font-size: 2.9em;
+	text-align: left;
+}
+footer>h6 {
+	line-height: 1.3em;
+}
+}
+ @media screen and (max-width:320px) {
+section {
+	padding: 55px 0;
+}
+section h3 {
+	font-size: 1.2em;
+}
+section .gotop {
+	bottom: 20px;
+}
+ section.search .nav-pills > li > a {
+    font-size: 1.3em;
+}
+section.search .nav-pills > li.col-md-4 {
+	margin-bottom: 5px;
+}
+section.search ul.list-group-item > li > a {
+	margin: 0 0 8px 0;
+	font-size: 12px;
+}
+section.search ul > li > span > a {
+	font-size: 12px;
+}
+}
