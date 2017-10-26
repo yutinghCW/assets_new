@@ -1,0 +1,18 @@
+<svg id="5542b960-bf52-4578-9f73-447a9f045ce1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" width="500" height="499.35" viewBox="0 0 500 499.35">
+  <defs>
+    <style>
+      .ee3fb477-cf6e-46c3-b796-b94ab4c741a8 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 30px;
+      }
+    </style>
+  </defs>
+  <title>checkIcon2</title>
+  <g>
+    <polyline class="ee3fb477-cf6e-46c3-b796-b94ab4c741a8" points="132.34 234.77 233.47 357.94 485 16.3"/>
+    <path class="ee3fb477-cf6e-46c3-b796-b94ab4c741a8" d="M474.42,182.24A234.69,234.69,0,0,1,484.35,250c0,129.61-105.07,234.68-234.68,234.68S15,379.61,15,250,120.07,15.32,249.68,15.32A233.75,233.75,0,0,1,351.28,38.4" transform="translate(0 -0.32)"/>
+  </g>
+</svg>

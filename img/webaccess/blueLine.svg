@@ -1,0 +1,15 @@
+<svg id="210e62e8-cdb2-434b-91c0-795b9ef1961a" data-name="pattern" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .\37 c20f791-23b1-4cc6-b31a-cc66b596ef4e {
+        fill: #434a5d;
+      }
+    </style>
+  </defs>
+  <title>blueLine</title>
+  <g>
+    <polygon class="7c20f791-23b1-4cc6-b31a-cc66b596ef4e" points="10 0.71 10 0 9.29 0 0 9.29 0 10 0.71 10 10 0.71"/>
+    <polygon class="7c20f791-23b1-4cc6-b31a-cc66b596ef4e" points="10 10 10 9.29 9.29 10 10 10"/>
+    <polygon class="7c20f791-23b1-4cc6-b31a-cc66b596ef4e" points="0 0.71 0.71 0 0 0 0 0.71"/>
+  </g>
+</svg>

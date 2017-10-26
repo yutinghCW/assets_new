@@ -1,0 +1,18 @@
+<svg id="6b37747b-10c2-46fc-ad45-e4f32abc805e" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" width="26.5" height="26.5" viewBox="0 0 26.5 26.5">
+  <defs>
+    <style>
+      .\31 f65c1b6-1f3b-41d9-9354-d4d521b1e8c5 {
+        fill: none;
+        stroke: #578ca9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <title>checkStatus</title>
+  <g>
+    <circle class="1f65c1b6-1f3b-41d9-9354-d4d521b1e8c5" cx="13.25" cy="13.25" r="12.5"/>
+    <polyline class="1f65c1b6-1f3b-41d9-9354-d4d521b1e8c5" points="12.75 5.75 12.75 12.75 19.75 12.75"/>
+  </g>
+</svg>
