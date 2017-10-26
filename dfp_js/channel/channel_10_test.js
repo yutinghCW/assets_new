@@ -1,0 +1,27 @@
+googletag.cmd.push(function () {
+    googletag.defineSlot('/423694368/test_Operate_728x90_3', [728, 90], 'div-gpt-ad-1437711986300-0').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x600', [300, 600], 'div-gpt-ad-1437711986300-1').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_728x90_1', [[320, 50], [728, 90]], 'div-gpt-ad-1437711986300-2').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x250_1', [300, 250], 'div-gpt-ad-1437711986300-3').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x250_2', [300, 250], 'div-gpt-ad-1437711986300-4').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x250_3', [300, 250], 'div-gpt-ad-1437711986300-5').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x250_4', [300, 250], 'div-gpt-ad-1437711986300-6').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_other_300x250_5', [300, 250], 'div-gpt-ad-1469610501174-0').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x40_1', [300, 40], 'div-gpt-ad-1437711986300-7').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x40_2', [300, 40], 'div-gpt-ad-1437711986300-8').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x40_3', [300, 40], 'div-gpt-ad-1437711986300-9').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x40_4', [300, 40], 'div-gpt-ad-1437711986300-10').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x40_5', [300, 40], 'div-gpt-ad-1437711986300-11').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_PicAD_mix', [[300, 328], [620, 558]], 'div-gpt-ad-1437711986300-12').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x1100_left', [300, 1100], 'div-gpt-ad-1443171775703-16').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_300x1100_right', [300, 1100], 'div-gpt-ad-1443171993398-17').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_Operate_960x200', [960, 200], 'div-gpt-ad-1443172174182-16').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_all_300x40_6', [300, 40], 'div-gpt-ad-1501743689891-0').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_all_300x40_7', [300, 40], 'div-gpt-ad-1501743689891-1').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_all_300x40_8', [300, 40], 'div-gpt-ad-1501743689891-2').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_all_300x40_9', [300, 40], 'div-gpt-ad-1501743689891-3').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/test_all_300x40_10', [300, 40], 'div-gpt-ad-1501743689891-4').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+});

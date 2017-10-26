@@ -1,0 +1,21 @@
+googletag.cmd.push(function () {
+    googletag.defineSlot('/423694368/Life_728x90_2', [[320, 50], [728, 90]], 'div-gpt-ad-1428996122964-0').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_728x90_3', [728, 90], 'div-gpt-ad-1428996122964-1').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x600', [300, 600], 'div-gpt-ad-1428996122964-2').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_728x90_1', [[320, 50], [728, 90]], 'div-gpt-ad-1428996122964-3').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_800x400', [[260, 400], [800, 400]], 'div-gpt-ad-1428996122964-4').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x250_1', [300, 250], 'div-gpt-ad-1428996122964-5').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x250_2', [300, 250], 'div-gpt-ad-1428996122964-6').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x250_3', [300, 250], 'div-gpt-ad-1428996122964-7').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x250_4', [300, 250], 'div-gpt-ad-1428996122964-8').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/other_300x250_5', [300, 250], 'div-gpt-ad-1468463467867-0').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x40_1', [300, 40], 'div-gpt-ad-1428996122964-9').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x40_2', [300, 40], 'div-gpt-ad-1428996122964-10').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x40_3', [300, 40], 'div-gpt-ad-1428996122964-11').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x40_4', [300, 40], 'div-gpt-ad-1428996122964-12').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_300x40_5', [300, 40], 'div-gpt-ad-1428996122964-13').addService(googletag.pubads());
+    googletag.defineSlot('/423694368/Life_620x538', [620, 538], 'div-gpt-ad-1432202417225-14').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs(true);
+    googletag.enableServices();
+});
