@@ -1,0 +1,269 @@
+/*　======　熱門議題頁用　======　*/
+/*.issue .subNav ul {
+	top: 17px;
+}*/
+.issue .main > h1 {
+	font-size: 30px;
+	color: #373737;
+	padding: 10px 0 20px;
+	width: 940px;
+}
+.issue article {
+	float: none;
+	width: auto;
+}
+.issue .main .h1-phase {
+	font-size: 17px;
+	color: #373737;
+	line-height: 1.8;
+	padding: 0 0 20px;
+}
+.issue .h2 {
+	padding: 10px 10px 10px 0;
+	margin-top: 40px;
+	color: #4a4a4a;
+	font-size: 20px;
+	font-weight: bold;
+}
+.issue .main div:before, .issue .main div:after {
+	content: '';
+	display: inherit;
+	clear: both;
+}
+.issue .editor-upload {
+	padding-bottom: 20px;
+}
+.issue .editor-upload ul.slider p {
+	display: none;
+}
+.issue .editor-upload > img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+.issue.article-page .main article.specArticle {
+	padding: 0 0 20px;
+	min-height: auto;
+}
+.issue.article-page .main article.specArticle .informationArea {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	height: auto;
+}
+.list-article-item {
+	float: left;
+	padding: 0 10px;
+	width: 50%;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+@media screen and (min-width:768px) {
+	section.list-article-item:nth-of-type(-n+2) {
+		margin-top: 10px;
+		min-height:268px;
+	}
+}
+@media screen and (max-width:767px) {
+	.list-article-item {
+		float: none;
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+	}
+}
+
+.issue .list-article-item {
+	width: calc(33.3333333% - 13.4px);
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.issue section.list-article-item:nth-of-type(3n) {
+	margin-right: 0;
+}
+.issue .item-inside .pic a:after {
+	background-image: none;
+	left: 50%;
+	bottom: 50%;
+	margin: 0 0 -30px -30px;
+}
+.issue .item-inside time {
+	float: right;
+	color: #939ea7;
+}
+
+@media screen and (max-width:382px) {
+	.issue.article-page .main .informationArea .fbShare,  .issue.article-page .main .informationArea .comments,  .issue.article-page .main .informationArea .gPlus,  .issue.article-page .main .informationArea .email {
+		padding: 0;
+	}
+	.issue.article-page .main .informationArea .fbShare .txt,  .issue.article-page .main .informationArea .comments .txt,  .issue.article-page .main .informationArea .gPlus .txt,  .issue.article-page .main .informationArea .email .txt {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width:767px) {
+	.issue .main > h1 {
+		float: none;
+		width: auto;
+		padding: 10px 10px 20px;
+	}
+	.issue .main .h1-phase {
+		padding: 20px 10px;
+	}
+	.issue .h2 {
+		font-size: 20px;
+		padding: 10px 0px;
+		color: #4a4a4a;
+	}
+	.issue .editor-upload {
+		padding-bottom: 10px;
+	}
+	.issue.article-page .main article.specArticle {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	.issue.article-page .main article.specArticle .informationArea {
+		padding: 0;
+	}
+}
+@media (max-height: 480px) {
+	.issue.article-page .main .informationArea .fbShare .txt,  .issue.article-page .main .informationArea .comments .txt,  .issue.article-page .main .informationArea .gPlus .txt,  .issue.article-page .main .informationArea .email .txt {
+		display: inline-block;
+	}
+}
+@media screen and (min-width:768px) {
+	/*.issue section.list-article-item:nth-of-type(-n+2) {*/
+	.issue section.list-article-item:nth-of-type(n) {
+		margin-top: 0;
+		min-height: 268px;
+	}
+	.essaySNS.desktopUsed {
+		display: block;
+	}
+	.essaySNS.mobileUsed {
+		display: none;
+	}
+}
+.list-article-item h2 a {
+	color: #373737;
+	line-height: 1.3;
+}
+.channel-link + h2,
+.channel-link + time + h2 {
+	padding-top: .4em;
+}
+.item-inside {
+	width: 100%;
+}
+@media screen and (max-width:767px) {
+	.essaySNS.desktopUsed {
+		display: none;
+	}
+	.essaySNS.mobileUsed {
+		display: block;
+	}
+	.issue .list-article-item {
+		float: none;
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+	}
+	.list-article-item h2 a {
+		color: #373737;
+		line-height: 1.3;
+		font-size: 21px;
+	}
+	.channel-link + h2, .channel-link + time + h2 {
+		padding-top: .4em;
+		padding-bottom: 10px;
+	}
+	.item-inside {
+		background-color:#fff;
+		border:1px solid #c0c3ca;
+	}
+	.item-inside .txt {
+		padding: 10px 10px 15px 10px;
+	}
+	.article-header ul.slider p {
+		top: auto;
+		font-size: 14.28px;
+	}
+	/*純圖片*/
+	.issue .article-header ul.slider {
+		padding-top: 66.98412698412698%;
+	}
+}
+.item-inside .pic {
+	width: 100%;
+	position: relative;
+	height: 0;
+	padding-bottom: 61.666666667%;
+	margin-bottom: 10px;
+	background: #eaebef url(../../img/icon-article-new-large.png) no-repeat center center;
+}
+.item-inside .pic a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.item-inside .pic a:before {
+	content:'';
+	display:block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	opacity:0;
+	transition:.3s;
+	background-image:-webkit-radial-gradient(50% 50%, closest-side circle, rgba(0,0,0,.1) 0%, rgba(0,0,0,.5) 100%);
+	background-image:-moz-radial-gradient(50% 50%, closest-side circle, rgba(0,0,0,.1) 0%, rgba(0,0,0,.5) 100%);
+}
+.item-inside .pic a:hover:before {
+	opacity:1;
+}
+.item-inside .pic a:after {
+	content:'';
+	display:block;
+	width: 60px;
+	height: 59px;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	z-index: 2;
+	/*background:url(http://www.cw.com.tw/assets_new/video/img/play-circle.png);*/
+}
+/*.item-inside.video .pic a:after {
+	background-image:url(http://www.cw.com.tw/assets_new/video/img/play-circle.png);
+}
+.item-inside.picture .pic a:after {
+	background-image: url(http://www.cw.com.tw/assets_new/video/img/pictures.png);
+}
+.item-inside.chart .pic a:after {
+	background-image: url(http://www.cw.com.tw/assets_new/video/img/chart.png);
+}
+.item-inside.quiz .pic a:after {
+	background-image: url(http://www.cw.com.tw/assets_new/video/img/quiz.png);*/
+}
+.rectangle .item-inside .pic a:after {
+	display:none;
+}
+.item-inside .pic a img {
+	width: 100%;
+	height: auto;
+}
+.item-inside .channel-link {
+	display: inline-block;
+	color: #d60c18;
+}
+.item-inside time {
+	display: inline-block;
+}
+.item-inside figcaption {
+	opacity: 0;
+}
