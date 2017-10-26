@@ -1,0 +1,95 @@
+/*.index-page.client-allReading-Page .main-header {
+	margin-top: 0;
+}*/
+.client-allReading-Page .wrapper .clientTitle {
+	display: table;
+	margin: auto;
+}
+.client-allReading-Page .wrapper .clientTitle h3 {
+	margin-bottom: 0;
+	font-size: 28px;
+}
+.client-allReading-Page .wrapper .clientSection {
+	height: auto;
+	background-color: #fff;
+}
+.client-allReading-Page .wrapper .clientSection .clientList {
+	margin-top: 1.5em;
+}
+.client-allReading-Page .wrapper .clientSection .clientList:before,
+.client-allReading-Page .wrapper .clientSection .clientList:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.client-allReading-Page .wrapper .clientSection .clientList .clientSubtitle {
+	font-weight: bold;
+}
+@media (min-width: 769px) {
+	.client-allReading-Page .wrapper .clientSection .clientList .clientSubtitle {
+		float: left;
+		padding: 0 15px 0 0;
+		width: 210px;
+		text-align: right;
+		border-right: 3px solid #d60c18;
+	}
+	.client-allReading-Page .wrapper .clientSection .clientList .clientContent {
+		float: left;
+		padding-left: 30px;
+		width: calc(100% - 210px);
+	}
+}
+@media (max-width: 768px) {
+	.client-allReading-Page .wrapper .clientSection .clientList {
+		margin-top: 2em;
+	}
+	.client-allReading-Page .wrapper .clientSection .clientList .clientSubtitle {
+		padding: 0 0 0 10px;
+		margin-bottom: 10px;
+		line-height: 1;
+		border-left: 3px solid #d60c18;
+	}
+	.client-allReading-Page .wrapper .clientSection .clientList .clientContent {
+		padding-left: 13px;
+	}
+}
+.client-allReading-Page .wrapper .clientSection .clientList .clientContent ol {
+	padding: 0 0 0 1.5em;
+	margin: 0;
+	list-style-type: decimal;
+}
+.client-allReading-Page .wrapper .clientSection .clientList .clientContent ol ul {
+	padding: 0 0 0 1.5em;
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+.client-allReading-Page .wrapper .clientSection .clientList.btn-ine {
+	text-align: center;
+}
+.client-allReading-Page .wrapper .clientSection .clientList.btn-ine a {
+	display: inline-block;
+	padding: 0px 35px;
+	margin-top: 1.5em;
+	color: #fff;
+	line-height: 60px;
+	letter-spacing: 0.2em;
+	background: #434a5d;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+.client-allReading-Page .wrapper .clientSection .clientContent a {
+	display: inline-block;
+	padding: 0px 5px;
+	color: #434a5d;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-bottom: 2px solid #434a5d;
+	transition: 0.3s;
+}
+.client-allReading-Page .wrapper .clientSection .clientContent a:hover {
+	color: #d60c18;
+	border-bottom: 2px solid #d60c18;
+}
+.client-allReading-Page .wrapper .clientSection .clientList.btn-ine a:hover {
+	background-color: #d60c18
+}

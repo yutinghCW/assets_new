@@ -1,0 +1,477 @@
+html, body {
+	background-color: #eee;
+	font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+}
+
+.loginHeader {
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #FFF;
+}
+.loginHeader h1 {
+	width: 562px;
+	padding: 10px 0;
+	margin: auto;
+}
+.loginHeader img {
+	vertical-align: baseline;
+}
+.daliy-BOX{
+    max-width: 400px;
+    margin: 0 auto;
+	}
+.form-signin {
+	max-width: 400px;
+	/*    padding: 15px;*/
+	margin: 0 auto;
+}
+.cwmember {
+	max-width: 400px;
+	/*    padding: 15px;*/
+	margin: 0 auto;
+}
+.cwmembersignin {
+	padding-top:30px;
+}
+
+.cwmemberemail{
+	max-width: 400px;
+	/*    padding: 15px;*/
+	margin: 0 auto;
+}
+.cwmemberemail p{
+	color:#999;
+	line-height:2.4em;
+	font-size:14px;}
+
+.fbregister {
+	max-width: 400px;
+	/*    padding: 15px;*/
+	margin: 0 auto;
+}
+.cwregister {
+	max-width: 400px;
+	/*    padding: 15px;*/
+	margin: 0 auto;
+}
+.loginContent {
+	text-align: center;
+}
+.titlebar p {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+/*hr{
+	position:relative;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	border-bottom:1px solid #BFBFBF;}
+*/	
+.separator {
+	text-align: center;
+}
+.separator span {
+	color: #000;
+	position: relative;
+	margin: .8em 0 0;
+	font-size: 15px;
+	font-weight: 300;
+	background-color: #eee;
+	padding: 0 1em;
+	z-index: 1;
+}
+.separator:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 90%;
+	left: 0;
+}
+.btn a {
+	font-size: 15px;
+	color: #FFF;
+}
+.btn a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.fbLoginBtn .fbOrg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+}
+
+.fbLoginBtn {
+ color: #fff;
+ background-color: #3a5795;
+ display: block;
+ width: 372px;
+ height: 40px;
+ line-height: 40px;
+ text-align: center;
+ position: relative;
+}
+/*.btn-FB {
+	width: 100%;
+	height: 40px;
+	padding: 6px 12px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 28px;
+	border: 0 solid #ccc;
+	box-shadow: none;
+	text-align: center;
+	background: #315096;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+}
+.btn-FB:hover, .btn-FB:focus {
+	color: #fff;
+	background-color: #293D69;
+}*/
+.Splitter{
+	display: block;
+	top: auto;
+	bottom: -45px;
+	right: 50%;
+	width: 30px;
+	height: 30px;
+	margin:0 auto;
+	margin-top:20px;
+	border-radius: 50%;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	background: #555;
+	z-index: 3;
+}
+.Splitter p{
+	color:#FFF;
+	}
+
+.btn-cwLogin {
+	font-size: 15px;
+	color: #fff;
+	background-color: #373737;
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.btn-cwLogin:hover, .btn-cwLogin:focus {
+	color: #fff;
+	background-color: #d60d19;
+}
+.btn-nextverify {
+	font-size: 15px;
+	color: #fff;
+	background-color: #373737;
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.btn-nextverify:hover, .btn-nextverify:focus {
+	color: #fff;
+	background-color: #d60d19;
+}
+.btn-confirm {
+	font-size: 15px;
+	position: relative;
+	color: #fff;
+	background-color: #373737;
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.btn-confirm:hover, .btn-confirm:focus {
+	text-decoration: none;
+	color: #fff;
+	background-color: #d60d19;
+}
+form .inputgroup {
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+form .inputgroup .form-control {
+	margin-top: 15px;
+	border: 0;
+}
+.form-group {
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+	
+.form-groupemail {
+	max-width: 400px;
+	padding-bottom: 70px;
+	margin: 0 auto;
+}
+.form-groupphone {
+	max-width: 400px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+}
+.form-groupverify {
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+.form-pwd {
+	max-width: 400px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+.cwmembersignin {
+    padding-top:20px;
+}
+.form-groupname {
+	max-width: 400px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+}
+.form-grouppasswordagain {
+	max-width: 400px;
+	padding-bottom: 70px;
+	margin: 0 auto;
+}
+.forgotpassword {
+	padding: 0 0 70px 0;
+	text-align: right;
+}
+.forgotpassword a {
+	color: #000;
+}
+.forgotpassword a:hover {
+	color: #f00;
+}
+
+.lookup {
+	padding: 0 0 70px 0;
+	text-align: right;
+}
+.lookup a {
+	color: #45629e;
+}
+.lookup a:hover {
+	color: #428bca;
+}
+
+.Loginregister {
+	padding-right: 0;
+	text-align: center;
+}
+.Loginregister p {
+	margin: 0 0 10px;
+	text-align: center;
+}
+.againverifymsg {
+	padding-right: 0;
+	padding-top: 22px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.againverifymsg a {
+	font-size: 14px;
+	color: #45629e;
+}
+.cwlabel {
+	display: inline-block;
+	margin-bottom: 15px;
+	font-weight: 400;
+	text-align: justify;
+}
+.finishbox {
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 30px;
+	padding: 24px;
+}
+.finishbox p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.4
+}
+.finishbox button {
+	margin: 0 auto;
+	width: 400px;
+}
+.finishbox2 {
+/*	width: 400px;
+	height: 130px;*/
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 30px;
+	padding: 24px;
+}
+.finishbox2 p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.4;
+}
+.finishbox2 button {
+	margin: 0 auto;
+	width: 400px;
+}
+.PcAppbtn {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.PcAppbtn p {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #45629e;
+	padding-top: 20px;
+	text-align: center;
+}
+.PCdailyicon {
+	float: left;
+}
+.PCdailyicon img {
+	width: 100px;
+	height: 100px;
+	margin-left: 60px;
+}
+.PCQRcode {
+	text-align: center;
+}
+.PCQRcode img {
+	width: 100px;
+	height: 100px;
+	margin-right: 60px;
+}
+.register-page .cwLogin .inTxt {
+	display: block;
+	width: 295px;
+	height: 40px;
+	line-height: 40px;
+	padding: 6px 12px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border: 0 solid #ccc;
+	box-shadow: none;
+}
+@media(max-width:768px) {
+    
+.forgotpassword {
+	padding: 0 0 30px 0;
+	text-align: right;
+}     
+    
+.fbLoginBtn {
+ width: 100%;
+ height: 40px;
+}
+.cwmembersignin {
+    padding-top: 0;
+}
+.Splitter{
+	margin:0 auto;
+	margin-top:20px;
+}
+
+.titlebar p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.loginHeader h1 {
+	width: 100%;
+	padding: 10px 0;
+	margin: auto;
+	margin-left: 0px;
+}
+.loginHeader h1 img {
+	width: 84px;
+	height: 30px;
+	margin-left: 20px;
+}
+.form-groupname {
+	padding-bottom: 30px;
+}
+.form-grouppasswordagain {
+	padding-bottom: 50px;
+}
+.finishbox {
+	width: 100%;
+	margin: 0 auto;
+}
+.finishbox p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.finishbox2 {
+	width: 100%;
+	margin: 0 auto;
+}
+.finishbox2 p {
+	text-align: center;
+	font-size: 16px;
+    line-height: 1.3;
+}
+.lookup {
+	padding: 0 0 30px 0;
+	text-align: right;
+}
+.btn-confirm {
+	margin-bottom: 5px;
+}
+.btn-confirm:hover, .btn-confirm:focus {
+}
+.form-group {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.MobileAppbtn {
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+	margin-top:50px;
+}
+.MobileAppbtn p {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #45629e;
+	padding-top: 10px;
+	text-align: center;
+}
+.MobileIOS {
+}
+.MobileIOS img {
+	width: 100%;
+}
+.MobileGooglePlay {
+}
+.MobileGooglePlay img {
+	width: 100%;
+}
+}
+@media(min-width:768px) {
+.MobileAppbtn {
+	display: none;
+}
+}
+ @media(max-width:767px) {
+.PcAppbtn {
+	display: none;
+}
+}

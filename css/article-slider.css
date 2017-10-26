@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+	  .article-header ul.slider p{
+		  background-color: #f5f5f5;
+	  }
+	  
+
+
+@media only screen 
+	and (min-width : 620px) 
+	and (max-width : 787px) {
+		.article-header ul.slider {
+			padding-top: 75%;
+		}	
+}
+
+
+@media only screen 
+	and (min-width : 415px) 
+	and (max-width : 620px) {
+		.article-header a.prev, .article-header a.next {
+    	margin-top: 145px;
+		}	
+}
+
+
+

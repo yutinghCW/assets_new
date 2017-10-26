@@ -1,0 +1,738 @@
+/*2017-05-22文章收藏頁collect-article*/
+.collect-article .main h1 {
+	font-size: 30px;
+	font-weight: 300;
+	padding: 10px 0 20px;
+	margin-left: 40px;
+	text-align: left;
+	color: #000000;
+	position: relative;
+}
+.collect-article .main h1:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 6px;
+	left: -45px;
+	background: url("../img/icon-bookmark.svg") no-repeat center center;
+}
+.collect-article .main p.certificate {
+	font-size: 15px;
+	font-weight: 300;
+	text-align: left;
+	color: #777777;
+	padding: 0 0 20px 0;
+	border-bottom: 2px solid #777777;
+}
+.collect-article .main .Listwrapper {
+	width: 940px;
+	min-height: 520px;
+}
+.collect-article .main .articleList {
+	width: 940px;
+	height: 120px;
+	background-color: #fff;
+	border: 2px solid #d6d5d5;
+	border-top: 0;
+	padding: 15px 30px;
+	position: relative;
+}
+.collect-article .main .articleList .listA {
+	position: absolute;
+	display: block;
+	top: 18px;
+	left: 150px;
+	width: 80%;
+	height: 80px;
+}
+.collect-article .main .articleList .listA a {
+	display: block;
+}
+.collect-article .main .articleList .listA a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	transition: .3s;
+}
+.collect-article .main .articleList .listA img.pic {
+	position: absolute;
+	display: block;
+	float: left;
+	width: 120px;
+	height: 80px;
+	background-color: #eaebef;
+	margin: 0px 20px 0 5px;
+}
+.collect-article .main .articleList .listA .contentList {
+	position: absolute;
+	display: block;
+	float: left;
+	width: calc(80% - 10px);
+	left: 160px;
+}
+.collect-article .main .articleList .listA .contentList h2 {
+	font-size: 21px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+.collect-article .main .articleList .listA .contentList h2 > a {
+	display: block;
+	color: #373737;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.collect-article .main .articleList .listA .contentList h2 a:hover {
+	color: #d30c18;
+}
+.collect-article .main .articleList .listA .contentList p {
+	font-size: 15px;
+	line-height: 1.5;
+	color: #373737;
+	text-align: justify;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.collect-article .main .articleList .listB {
+	float: left;
+	width: auto;
+	text-align: center;
+	padding-top: 5px;
+	position: absolute;
+}
+.collect-article .main .articleList .listB time {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	color: #777777;
+}
+.collect-article .main .articleList .listB ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.collect-article .main .articleList .listB li {
+	margin: 16px 8px;
+}
+.collect-article .main .articleList .listB li {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.collect-article .main .articleList .listB li.delete {
+	background: url("../img/cross.svg") no-repeat center center;
+}
+.collect-article .main .articleList .listB li.share {
+	background: url("../img/forward.svg") no-repeat center center;
+	position: relative;
+}
+.collect-article .main .articleList .listB li.share span.shareBtn {
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.collect-article .main .articleList .listB ul .shareTipmenu {
+	width: auto;
+	text-align: center;
+	position: initial;
+	margin: 0;
+}
+.listB li .lightBoxshare .shareNav {
+	position: absolute;
+	top: 35px;
+	left: 35px;
+	width: calc(95% + 1em);
+	background: #fff;
+	border-top: 0;
+	height: 0;
+	overflow-x: hidden;
+	transition: width .15s;
+}
+.listB li.share .lightBoxshare .shareNav:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 18px;
+	left: -5px;
+	border-style: solid;
+	border-width: 6px 5px 6px 0;
+	border-color: transparent #d6d5d5 transparent transparent;
+}
+.listB li.share .lightBoxshare .shareNav:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 18px;
+	left: -3px;
+	border-style: solid;
+	border-width: 6px 5px 6px 0;
+	border-color: transparent #ffffff transparent transparent;
+}
+.listB li.share .lightBoxshare .shareNav p {
+	display: none;
+}
+.collect-article .main .articleList .listB .share .shareNav ul.shareTipmenu li {
+	display: inline-block;
+	margin: 8px 5.5px;
+}
+/*
+.lightBoxshare {
+	display: none;
+}
+*/
+.listB .share .shareNav ul.shareTipmenu li a {
+	display: block;
+}
+.listB .share .shareNav ul.shareTipmenu li i.icon {
+	width: 30px;
+	height: 30px;
+}
+.listB .share .shareNav ul.shareTipmenu li.fbShare i.icon, .lightBoxshare .lightbox .lightBoxContnt li.fbShare i.icon {
+	background: #45629e url(http://www.cw.com.tw/assets_new/img/icon_fb_article.png) no-repeat center center;
+}
+.listB .share .shareNav ul.shareTipmenu li.lineShare i.icon, .lightBoxshare .lightbox .lightBoxContnt li.lineShare i.icon {
+	background: #1DC320 url(http://www.cw.com.tw/assets_new/img/icon_comments_article.png) no-repeat center center;
+}
+.listB .share .shareNav ul.shareTipmenu li.gShare i.icon, .lightBoxshare .lightbox .lightBoxContnt li.gShare i.icon {
+	background: HSLA(6, 80%, 55%, 1) url(http://www.cw.com.tw/assets_new/img/icon_gPlus_article.png) no-repeat center center;
+}
+.listB .share .shareNav ul.shareTipmenu li.emailShare i.icon, .lightBoxshare .lightbox .lightBoxContnt li.emailShare i.icon {
+	background: HSLA(0, 0%, 22%, 1) url(http://www.cw.com.tw/assets_new/img/icon_mail_article.png) no-repeat center center;
+}
+.emailShare > a span {
+	background: none!important;
+	width: 30px!important;
+	height: 30px!important;
+	margin: 0!important;
+	padding: 0!important;
+	padding: 0!important;
+	top: 0px!important;
+	right: 0px!important;
+	bottom: 0!important;
+	position: absolute!important;
+	z-index: 10!important;
+}
+@media (min-width: 768px) {
+.listB li:hover .shareNav {
+	top: -10px;
+	height: 48px;
+	width: 168px;
+	border: 1px solid #d6d5d5;
+	box-shadow: 0px 0px 2px 0px rgba(186, 186, 186, 0.3);
+	overflow-x: visible;
+}
+}
+@media (max-width: 767px) {
+.collect-article .main, .member-page .main {
+	padding: 30px 10px;
+}
+.collect-article .main .Listwrapper {
+	width: 100%;
+	min-height: 300px;
+}
+.collect-article .main .articleList {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+.collect-article .main .articleList .listA {
+	top: 15px;
+	left: 0px;
+	width: 100%;
+	height: 80px;
+	padding: 0 10px;
+}
+.collect-article .main .articleList .listA img.pic {
+	float: none;
+	width: 105px;
+	height: 70px;
+	margin: 0px 10px 0 5px;
+}
+.collect-article .main .articleList .listA .contentList {
+	width: 60%;
+	left: 140px;
+}
+.collect-article .main .articleList .listA .contentList h2 {
+	font-size: 18px;
+	line-height: 1.33;
+	text-align: left;
+	color: #373737;
+}
+.collect-article .main .articleList .listA .contentList h2 > a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.collect-article .main .articleList .listA .contentList p {
+	display: none;
+}
+.collect-article .main .articleList .listB {
+	position: absolute;
+	display: flex;
+	float: none;
+	width: 100%;
+	text-align: left;
+	bottom: 0;
+	padding: 5px 15px;
+}
+.collect-article .main .articleList .listB time {
+	padding: 10px 20px;
+}
+.collect-article .main .articleList .listB ul {
+	position: absolute;
+	right: 15px;
+}
+.collect-article .main .articleList .listB li {
+	margin: 0;
+}
+.collect-article .main .articleList .listB li.delete {
+	margin-right: 20px;
+}
+.collect-article .main .articleList .listB li a {
+	display: block;
+}
+.collect-article .main .articleList .listB li.fbShare, .collect-article .main .articleList .listB li.lineShare, .collect-article .main .articleList .listB li.gShare, .collect-article .main .articleList .listB li.emailShare {
+	margin: 10px;
+	width: 44px;
+	height: 44px;
+}
+.emailShare > a span {
+	width: 44px!important;
+	height: 44px!important;
+	top: 48px!important;
+	right: 46px!important;
+}
+.listB li.share .shareNav p {
+	display: block;
+}
+.listB .share .shareNav ul.shareTipmenu li i.icon {
+	width: 44px;
+	height: 44px;
+}
+}
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+.collect-article .main .articleList .listA .contentList {
+	width: 50%;
+	left: 135px;
+}
+.collect-article .main .articleList .listA img.pic {
+	　padding: 0 5px;
+}
+.collect-article .main .articleList .listB li.delete {
+	margin-right: 10px;
+}
+}
+/*2017-06-01 lightbox 手機*/
+@media (max-width: 767px) {
+.listB li.share .lightBoxshare {
+	display: none;
+	position: relative;
+	z-index: 10002;
+}
+.listB li.share .lightBoxshare .lightboxbg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0, 0, 0, .4);
+}
+.listB li.share .shareNav.shareBoxContnt {
+	position: fixed;
+	top: 230px;
+	left: 8px;
+	width: 300px;
+	height: 130px;
+	background: #fff;
+	border-top: 0;
+	margin: 0 0 0 50px;
+	padding: 25px 40px;
+	overflow: hidden;
+	z-index: 5;
+}
+.listB li.share .shareNav.shareBoxContnt p {
+	display: block;
+	margin-left: 5px;
+}
+.listB li.share .shareNav.shareBoxContnt a.close {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	background: #949494 url(http://www.cw.com.tw/assets_new/img/btn-close.png) no-repeat center center;
+	font-size: 0;
+	cursor: pointer;
+}
+.listB li.share .shareNav.shareBoxContnt a:hover.close {
+	background-color: #000;
+}
+}
+@media (max-width: 375px) {
+.listB li.share .shareNav.shareBoxContnt {
+	margin: 0 0 0 28.5px;
+}
+}
+@media (max-width: 320px) {
+.listB li.share .shareNav.shareBoxContnt {
+    margin: -80px 0 0px 2px;
+}
+}
+/*2017-05-23我的帳戶頁member-page*/
+.member-page .main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.member-page .main .rightCol {
+	margin-top: 10px;
+	border: 1px solid #d6d5d5;
+	background-color: #fff;
+}
+.member-page .main .rightCol > h3 {
+	padding: 0 40px;
+	color: #373737;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	border-bottom: 1px solid #d6d5d5;
+}
+
+.member-page .main .leftCol ul.memberSelectTab {
+	background-color: #fff;
+}
+.member-page .main .leftCol .firstLevelTitle, .member-page .main .leftCol ul.memberSelectTab li {
+	color: #777;
+	border: solid #d6d5d5;
+	border-width: 0px 1px 1px;
+}
+.member-page .main .leftCol .firstLevelTitle a, .member-page .main .leftCol ul.memberSelectTab li a {
+	display: block;
+	padding: 13px 20px;
+	color: inherit;
+}
+.member-page .main .leftCol ul.memberSelectTab li a:hover {
+	font-weight: bold;
+}
+.member-page .main .leftCol .firstLevelTitle {
+	position: relative;
+	color: #373737;
+	font-weight: bold;
+	background-color: #d6d5d5;
+}
+.member-page .main .leftCol .firstLevelTitle:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -5px;
+	width: 14px;
+	height: 10px;
+	background: url(http://www.cw.com.tw/assets_new/img/download_arrow_blk.png) center center no-repeat;
+	background-size: contain;
+	transform: rotate(0deg);
+}
+.member-page .main .leftCol .firstLevelTitle.active:after {
+	transform: rotate(180deg);
+}
+.member-page .main .leftCol ul.memberSelectTab li.active a, .member-page .main .leftCol .firstLevelTitle a {
+	color: #373737;
+}
+.member-page .main .leftCol ul.memberSelectTab li.active a {
+	font-weight: bold;
+}
+.member-page .main .portfolioListWrap, .member-page .main .newsletterContent {
+	padding: 15px 15px 5px;
+}
+.member-page .main .portfolioListWrap .portfolioList {
+	position: relative;
+	margin-bottom: 15px;
+}
+.member-page .main .portfolioListWrap .portfolioList:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.member-page .main .portfolioListWrap .portfolioList-title, .member-page .main .portfolioListWrap .portfolioList-detail {
+	line-height: 25px;
+}
+.member-page .main .portfolioListWrap .portfolioList-title {
+	font-weight: bold;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-subtitle, .member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-list {
+	color: #777;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-list p {
+	color: #777;
+	line-height: 25px;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list li {
+	position: relative;
+	padding: 0 0 5px;
+	border-bottom: 1px solid #d6d5d5;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list li + li {
+	margin-top: 5px;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list li > p > span, .member-page .main .portfolioListWrap .portfolioList-detail > span {
+	float: right;
+	display: inline-block;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail > span.editBtn a {
+	display: block;
+	padding: 0 10px;
+	color: #373737;
+	background-color: #f6f5f5;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail > span.editBtn a:hover {
+	color: #f6f5f5;
+	background-color: #373737;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list li > p > span a, .member-page .main .portfolioListWrap .portfolioList-detail span.editBtnLink a {
+	display: block;
+	color: #d60c18;
+	text-decoration: underline;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list li > p > span a.order {
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+.member-page .main .leftCol, .member-page .main .rightCol {
+	float: left;
+}
+.member-page .main .leftCol {
+	width: 150px;
+}
+.member-page .main .rightCol {
+	margin-top: 0;
+	margin-left: 20px;
+	width: 770px;
+}
+.member-page .main .portfolioListWrap {
+	padding: 20px 40px 5px;
+}
+.member-page .main .portfolioListWrap .portfolioList-title {
+	width: 100px;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail {
+	width: calc(100% - 100px);
+}
+.member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-subtitle {
+	width: 80px;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list {
+	width: calc(100% - 80px);
+}
+.member-page .main .portfolioListWrap .portfolioList-title, .member-page .main .portfolioListWrap .portfolioList-detail {
+	float: left;
+	line-height: 30px;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-subtitle, .member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-list {
+	float: left;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail {
+	padding: 0 10px;
+}
+.member-page .main .portfolioListWrap .portfolioList.editVer .portfolioList-detail:hover {
+	background-color: #f6f5f5;
+}
+.member-page .main .leftCol .firstLevelTitle.active:after {
+	transform: rotate(0deg);
+}
+}
+
+@media (max-width: 767px) {
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list li > p > span, .member-page .main .portfolioListWrap .portfolioList-detail > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail ul.portfolioList-detail-list {
+	margin-top: 10px;
+}
+.member-page .main .portfolioListWrap .portfolioList-detail .portfolioList-detail-subtitle {
+	color: #373737;
+}
+.member-page .main .rightCol h3 {
+	display: none;
+}
+.member-page .main .leftCol ul.memberSelectTab {
+	display: none;
+}
+}
+/*2017-06-03-我的電子報-newsletter*/
+.member-page .main .rightCol .newsletterContent .newsletter-item {
+	display: inline-block;
+	width: calc(50% - 3px);
+	position: relative;
+	padding: 10px 30px;
+	margin: 15px 0;
+	border-right: 1px solid #d6d5d5;
+}
+.member-page .main .rightCol .newsletterContent .rightLine {
+	border-right: 0px;
+}
+.member-page .main .rightCol .newsletterContent .checked {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 115px;
+}
+.member-page .main .rightCol .newsletterContent .letterPic {
+	display: block;
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin: 0 10px;
+	object-fit: cover;/*clear: both;*/
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item h3 {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	color: #373737;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item h4 {
+	font-size: 15px;
+	font-weight: 300;
+	text-align: left;
+	line-height: 2.1;
+	color: #777777;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe, .member-page .main .rightCol .newsletterContent .newsletter-item .rightReadSub {
+	margin: 3px 0 3px 90px;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe, .member-page .main .rightCol .newsletterContent .newsletter-item .rightReadSub {
+	width: 81px;
+	height: 22px;
+	line-height: 16px;
+	background-color: #d60c18;
+	padding: 4px 18px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe.ing, .member-page .main .rightCol .newsletterContent .newsletter-item .rightReadSub.ing {
+	background-color: #999;
+	cursor: default;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe:hover, .member-page .main .rightCol .newsletterContent .newsletter-item .rightReadSub:hover {
+	background-color: #373737;
+	text-decoration: none;
+	color: #fff;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe.ing:hover{
+	background-color: #999;
+	cursor: default;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe:active, .member-page .main .rightCol .newsletterContent .newsletter-item .rightReadSub:active {
+	background-color: #373737;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item .subscribe:focus, .member-page .main .rightCol .newsletterContent .newsletter-item .rightReadSub:focus {
+	background-color: #373737;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item p, .member-page .main .annotation p {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.6;
+	text-align: left;
+	color: #373737;
+	padding: 20px 8px 6px 8px;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item span{
+	padding: 0 8px;
+	font-size: 13px;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item span > a{
+    color: #777777;
+    text-decoration: underline;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item span > a:hover{
+	color:#aa0506;
+}
+.member-page .main .annotation {
+	float: left;
+	width: 82%;
+	text-align: center;
+	margin: 20px 0 10px 170px;
+}
+.member-page .main .annotation p {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.member-page .main .annotation p > a {
+	padding-bottom: 2px;
+	color: #373737;
+	border-bottom: 1px solid #373737;
+}
+.member-page .main .annotation p > a:hover {
+	color: #d30c18;
+	border-bottom: 1px solid #d30c18;
+}
+.member-page .main .annotation .btn {
+	display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 30px;
+    background-color: #d6d5d5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.member-page .main .annotation .btn:hover {
+	background-color: #373737;
+	color: #fff;
+}
+.member-page .main .annotation .btn a{
+	display: block;
+	text-align: center;
+	color: #373737;
+	text-decoration: none;
+}
+.member-page .main .annotation .btn a:hover{
+	text-decoration: none;
+	color:#FFFFFF ;
+}
+@media (max-width: 767px) {
+.member-page .main .rightCol .newsletterContent .newsletter-item {
+	width: 100%;
+	padding: 0 0 20px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #d6d5d5;
+	border-right: 0;
+}
+.member-page .main .rightCol .newsletterContent .cleanLine {
+	border-bottom: 0px;
+}
+.member-page .main .rightCol .newsletterContent .newsletter-item h3 {
+	display: block;
+}
+.member-page .main .rightCol .newsletterContent .checked {
+	width: 22px;
+	height: 22px;
+}
+.member-page .main .annotation {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 20px 10px;
+}
+}

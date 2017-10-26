@@ -1,0 +1,431 @@
+/*20170307-廣告、包版CSS*/
+/*
+.index-page .subNav {
+	position: absolute;
+	top: 90px;
+	left: 0;
+	right: 0;
+	padding: 0 46px;
+	margin: auto;
+	margin-bottom: -18px;
+	width: 100%;
+	height: 36px;
+	background-color: #777;
+	text-align: right;
+	z-index: 2;
+}
+*/
+/*
+.couplet-right.fixed,
+.couplet-left.fixed {
+	position: fixed;
+	top: -9px;
+}
+*/
+/*
+.subChannel-page .couplet-left.fixed,
+.subChannel-page .couplet-right.fixed,
+.subChannel-fashion-page .couplet-left.fixed,
+.subChannel-fashion-page .couplet-right.fixed,
+.article-page .couplet-left.fixed,
+.article-page .couplet-right.fixed,
+.channel-fashion-page .couplet-left.fixed,
+.channel-fashion-page .couplet-right.fixed,
+.channel-page .couplet-left.fixed,
+.channel-page .couplet-right.fixed,
+.subChannel-fashion-page .couplet-right.fixed,
+.subChannel-fashion-page .couplet-left.fixed {
+	position: fixed;
+	top: 51px;
+}
+*/
+/*
+.index-page .couplet-left.fixed,
+.index-page .couplet-right.fixed {
+	position: fixed;
+	top: 143px;
+}
+*/
+/*A首頁有包版start*/
+/*.index-page .banner{
+	display: none;
+}
+.index-page .subNav{
+	left: 0;
+	right: 0;
+	z-index: 0;
+	width: 100%;
+	top:-143px;
+	background-color: #777;
+	text-align: right;
+	height: 36px;
+	padding:0 46px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin:auto;
+	margin-bottom: -18px;
+	z-index: 2;
+}
+#eyeDiv{
+	top: 0px!important;
+}
+*/
+/*A首頁有包版*/
+/*A首頁有沒包版*/
+@media (min-width:768px) and (max-width:1024px) {
+	.index-page .subNav {
+		width: 1288px;
+	}
+	.index-page .subNav ul {
+		right: 20px;
+	}
+	.subNav.list-inline.fixed ul {
+		margin-right: -473px;
+	}
+}
+.subNav ul {
+	position: absolute;
+	z-index: 3;
+	width: 600px;
+	right: 50%;
+	top: 107px;
+	margin-right: -470px;
+	text-align: right;
+}
+/*A時尚主頻道有包版start*/
+/*
+.channel-fashion-page,.subChannel-fashion-page,.fashion-article-page{
+	background-color: #373737;
+}
+.channel-fashion-page .subNav.list-inline ul,.subChannel-fashion-page .subNav.list-inline ul,.fashion-article-page .subNav.list-inline ul{
+	position: absolute;
+	z-index: 3;
+	width: 600px;
+	right: 50%;
+	top: 16px;
+	margin-right: -470px;
+	text-align: right;
+}
+.channel-fashion-page .subNav.list-inline.fixed ul,
+.subChannel-fashion-page .subNav.list-inline.fixed ul,
+.fashion-article-page .subNav.list-inline.fixed ul {
+	position: fixed;
+	z-index: 99999;
+	width: 600px;
+	right: 50%;
+	top: 8px;
+	margin-right: -470px;
+	text-align: right;
+}
+.fashion-article-page .breadCrumbs,.fashion-article-page .main{
+	background-color: #fff;
+}
+*/
+/*A時尚主頻道有包版end*/
+/*
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1){
+	.subNav ul{
+		margin-right: -470px;
+	}
+}
+*/
+/*A時尚主子頻道頁有包版banner隱藏start*/
+/*
+.channel-fashion-page .banner,
+.subChannel-fashion-page .banner,
+.fashion-article-page .banner {
+	display: none;
+}
+*/
+/*A時尚主子頻道頁有包版banner隱藏end*/
+/*B主子頻道頁有包版banner隱藏及選單向上start*/
+/*
+.channel-page .banner,
+.article-page .banner,
+.subChannel-page .banner,
+.subChannel-fashion-page .banner,
+.channel-fashion-page .banner {
+	display: none;
+}
+*/
+/*
+.channel-page .subNav ul,
+.article-page .subNav ul,
+.subChannel-page .subNav ul,
+.subChannel-fashion-page .subNav ul,
+.channel-fashion-page .subNav ul {
+	top: 107px;
+}
+*/
+/*B主子頻道頁有包版banner隱藏及選單向上end*/
+/*========== 時尚主頻道有包版標題變色 START ==========*/
+.channel-fashion-page .class-header ul a,
+.subChannel-fashion-page .class-header ul a {
+	color: #373737;
+}
+.class-header ul a:hover {
+	color: #d60c18;
+}
+.channel-fashion-page .class-header h2,
+.subChannel-fashion-page .class-header h2 {
+	color: #373737;
+}
+/*========== 時尚主頻道有包版標題變色 END ==========*/
+/*=============== 各層級包版樣式、位置 START ===============*/
+.channel-page .couplet-wide,
+.subChannel-page .couplet-wide,
+.article-page .couplet-wide {
+	width: 960px;
+	height: 200px;
+	margin: auto;
+}
+.channel-page .couplet-left,
+.channel-page .couplet-right,
+.subChannel-page .couplet-left,
+.subChannel-page .couplet-right,
+.article-page .couplet-left,
+.article-page .couplet-right {
+	position: absolute;
+	top: 60px;
+	width: 300px;
+	height: 600px;
+}
+.channel-fashion-page .couplet-left,
+.channel-fashion-page .couplet-right {
+	position: absolute;
+	top: 150px;
+	width: 300px;
+	height: 600px;
+}
+.article-page .couplet-left,
+.article-page .couplet-right{
+	top: 133px;
+	background-color: #aaa;
+}
+.fashion-article-page .couplet-left,
+.fashion-article-page .couplet-right {
+	top: 223px;
+}
+.channel-page .couplet-left,
+.channel-fashion-page .couplet-left,
+.subChannel-page .couplet-left,
+.article-page .couplet-left {
+	right: 50%;
+	margin-right: 480px;
+}
+.channel-page .couplet-right,
+.channel-fashion-page .couplet-right,
+.subChannel-page .couplet-right,
+.article-page .couplet-right {
+	left: 50%;
+	margin-left: 480px;
+}
+/*=============== 各層級包版樣式、位置 END ===============*/
+/*==================== 首頁包版 START ====================*/
+.index-page .couplet-left,
+.index-page .couplet-right {
+	position: absolute;
+	/*top: 140px;*/
+	top: 230px;
+	width: 300px;
+	height: 600px;
+}
+.index-page .couplet-left {
+	right: 50%;
+	margin-right: 644px;
+}
+.index-page .couplet-right {
+	left: 50%;
+	margin-left: 644px;
+}
+.index-page .couplet-wide {
+	width: 1288px;
+	height: 200px;
+	margin: auto;
+}
+/*==================== 首頁包版 END ====================*/
+/*================ 包版手機開關 START ================*/
+@media (max-width:767px) {
+	.couplet-wide, .couplet-left, .couplet-right {
+		display: none !important;
+	}
+}
+/*================ 包版手機開關 END ================*/
+@media (max-device-width: 1024px) and(orientation : portrait) {
+	.couplet-wide, .couplet-left, .couplet-right {
+		display: none;
+	}
+	body.channel-fashion-page, body.subChannel-fashion-page {
+		background-color: #fff;
+	}
+}
+@media (max-device-width: 768px) and (orientation : landscape) {
+	.couplet-wide, .couplet-left, .couplet-right {
+		display: none;
+	}
+	body.channel-fashion-page, body.subChannel-fashion-page {
+		background-color: #fff;
+	}
+}
+/*B有包版ㄇ字型手機隱藏start*/
+@media (min-width:768px) {
+	.linefriend {
+		display: none;
+	}
+}
+@media (max-width:767px) {
+	.linefriend {
+		margin: 0 0 25px 0;
+		width: 107px;
+	}
+}
+/*B有包版ㄇ字型手機隱藏end*/
+/*首頁包版2*/
+/*
+.login-bg img {
+		width: 100%;
+		z-index: 0;
+		margin-top: 90px;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: fixed;
+}
+.main, .class-header, .main-nav, footer .footerContent {
+		width: 960px;
+		margin: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		position: relative;
+}
+*/
+/*登入頁背景廣告*/
+/*
+body.login-page {
+		background-image: url(http://topic.cw.com.tw/bg1.jpg);
+		background-position-y: 54px;
+		background-repeat: no-repeat;
+		background-color: #fff;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment:fixed;
+}
+*/
+/*登入頁背景廣告2*/
+/*
+.login-bg img {
+	position: absolute;
+	z-index: 0;
+	margin-top: 54px;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+@media (max-width: 797px){
+	.login-bg img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin-top: 54px;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		z-index: 0;
+	}
+}
+*/
+/*==================== 登入頁背景廣告-1118-edit START ====================*/
+html {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+/*登入頁背景廣告 header 圖層*/
+body.login-page .loginHeader {
+	position: relative;
+	z-index: 1;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fcfcfc;
+}
+body.login-page , #loginForm {
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	min-height: 100% !important;
+	background: #fcfcfc;
+}
+.login-dfp-ad {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	overflow: hidden;
+}
+.login-dfp-ad,
+.login-dfp-ad div,
+.login-dfp-ad iframe {
+	width: 100% !important;
+	min-height: 100%;
+	height: 100% !important;
+}
+/*==================== 登入頁背景廣告-1118-edit END ====================*/
+/*==================== 文章頁新版位-1124-edit START ====================*/
+article	#div-gpt-ad-1437710434861-3 {
+	margin-bottom: 25px;
+}
+article	#div-gpt-ad-1437710434861-3 iframe {
+	width: 300px !important;
+}
+/*==================== 文章頁新版位-1124-edit END ====================*/
+
+/*=================== 包版開關 START ===================*/
+/*預設:全部層級關閉*/
+/*主頻道頁*/
+.channel-page .couplet-wide,
+.channel-page .couplet-left,
+.channel-page .couplet-right,
+/*子頻道頁*/
+.subChannel-page .couplet-wide,
+.subChannel-page .couplet-left,
+.subChannel-page .couplet-right,
+/*時尚生活主頻道頁*/
+.channel-fashion-page .couplet-wide,
+.channel-fashion-page .couplet-left,
+.channel-fashion-page .couplet-right,
+/*時尚生活子頻道頁*/
+.subChannel-fashion-page .couplet-wide,
+.subChannel-fashion-page .couplet-left,
+.subChannel-fashion-page .couplet-right,
+/*時尚生活文章頁ㄇ版*/
+.fashion-article-page .couplet-wide,
+.fashion-article-page .couplet-left,
+.fashion-article-page .couplet-right,
+/*文章頁*/
+.article-page .couplet-wide,
+.article-page .couplet-left,
+.article-page .couplet-right {
+	display: none;
+}
+/*======================================================*/
+
+/*首頁ㄇ版*/
+.index-page .couplet-wide,
+.index-page .couplet-left,
+.index-page .couplet-right {
+	display: none;
+}
+/*時尚生活主頻道頁*/
+.channel-fashion-page .couplet-wide,
+.subChannel-fashion-page .couplet-wide,
+.fashion-article-page .couplet-wide {
+	display: none;
+}
+
+/*=================== 包版開關  END  ===================*/
