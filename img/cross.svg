@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Slices" transform="translate(-475.000000, -40.000000)" fill-rule="nonzero" fill="#373737">
+            <g id="cross" transform="translate(475.000000, 40.000000)">
+                <g id="Combined-Shape">
+                    <path d="M16,15.030303 L9.6969697,8.72727273 L8.72727273,9.6969697 L15.030303,16 L8.72727273,22.3030303 L9.6969697,23.2727273 L16,16.969697 L22.3030303,23.2727273 L23.2727273,22.3030303 L16.969697,16 L23.2727273,9.6969697 L22.3030303,8.72727273 L16,15.030303 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
