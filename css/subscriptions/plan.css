@@ -136,7 +136,7 @@ ul.set div.set-price span {
 }
 ul.set ul.set-describe {
 	/*min-height: 140px;*/
-	min-height: 175px;
+	min-height: 200px;
 	text-align: left;
 	line-height: 1.6;
 	list-style: outside disc;
