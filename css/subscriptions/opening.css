@@ -529,11 +529,11 @@ div[class*=circle-line-group] .line {
 	animation: bounceInDown 0.8s 9s 1 ease-out forwards alternate;
 }
 .mask p.slogan {
-	padding-left: 0.35em;
+	padding-left: 0.25em;
 	color: #fff;
-	font-size: 21px;
+	font-size: 19px;
 	text-align: center;
-	letter-spacing: 0.35em;
+	letter-spacing: 0.25em;
 	opacity: 0;
 	animation: sloganIn 0.5s 10s 1 ease-out forwards alternate;
 }
@@ -816,7 +816,7 @@ div[class*=circle-line-group] .line {
 		height: 35px;
 	}
 	.readMore {
-		bottom: 60px;
+		bottom: 15px;
 		padding-top: 12px;
 		padding-bottom: 12px;
 		width: 130px;
