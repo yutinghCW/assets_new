@@ -352,7 +352,7 @@ div[class*=circle-line-group] .line {
 .mask h1 {
 	position: relative;
 	margin-top: 35px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	text-align: center;
 }
 .mask h1:after, .mask h1 .animateLine:after {
@@ -468,7 +468,7 @@ div[class*=circle-line-group] .line {
 .mask ul.product {
 	position: relative;
 	display: table;
-	margin: 40px auto;
+	margin: 25px auto 40px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -513,7 +513,7 @@ div[class*=circle-line-group] .line {
 	bottom: 0;
 }
 .mask ul.product li .appositive {
-	display: block;
+	display: none;
 	min-width: 105px;
 	padding: 7px 7px 12px;
 	margin-bottom: 10px;
@@ -529,13 +529,16 @@ div[class*=circle-line-group] .line {
 	animation: bounceInDown 0.8s 9s 1 ease-out forwards alternate;
 }
 .mask p.slogan {
-	padding-left: 0.35em;
+	padding-left: 0.25em;
 	color: #fff;
-	font-size: 21px;
+	font-size: 16px;
 	text-align: center;
-	letter-spacing: 0.35em;
+	letter-spacing: 0.25em;
 	opacity: 0;
-	animation: sloganIn 0.5s 10s 1 ease-out forwards alternate;
+	animation: sloganIn 0.5s 9.35s 1 ease-out forwards alternate;
+}
+.mask p.slogan span + span {
+	display: none
 }
 .readMore {
 	position: absolute;
@@ -547,27 +550,51 @@ div[class*=circle-line-group] .line {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-left: -70px;
-	color: #fff;
+	color: #CA0C18;
 	font-size: 18px;
+	font-weight: bold;
 	text-align: center;
 	letter-spacing: 0.35em;
-	border: 2px solid #E6E6E6;
-	background-color: #CA0C18;
+	border: 2px solid #fff;
+	background-color: #fff;
 	opacity: 0;
-	animation: sloganIn 0.5s 10.5s 1 ease-out forwards alternate;
+	animation: sloganIn 0.5s 9.7s 1 ease-out forwards alternate;
 	z-index: 6;
 }
-.readMore:hover:after {
-	right: 100px;
+.readMore:hover {
+	color: #fff;
+	background-color: #CA0C18;
 }
-.readMore:after {
+.readMore:before, .readMore:after {
 	content: '';
 	position: absolute;
-	top: -2px;
-	right: 20px;
-	width: 15px;
-	border: 1px solid #CA0C18;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	transition: 0.3s;
+	z-index: -1;
+}
+.readMore:before {
+	background-color: #f5f5f5;
+	animation: readMore 1s infinite ease-out alternate;
+}
+.readMore:after {
+	background-color: #fafafa;
+	animation: readMore 1s infinite ease-out reverse;
+}
+.readMore:hover:before {
+	background-color: #d60c18;
+	animation: readMore 1s 1 ease-out alternate;
+}
+.readMore:hover:after {
+	background-color: #d60c18;
+	animation: readMore 1s 1 ease-out reverse;
+}
+@keyframes readMore {
+	0% {width: 0%;}
+	50% {width: 100%;}
+	100% {width: 0%;}
 }
 @keyframes cliprotate {
 	0% {transform: rotate(0deg);}
@@ -745,7 +772,7 @@ div[class*=circle-line-group] .line {
 		top: 50%;
 		left: 50%;
 		width: 768px;
-		height: 445px;
+		height: 385px;
 		transform: translate(-50%,-50%);
 	}
 	.mask h1 .animateLine .hLine {
@@ -761,13 +788,13 @@ div[class*=circle-line-group] .line {
 		font-size: 21px;
 	}
 	.mask p.slogan {
-		font-size: 24px;
+		font-size: 21px;
 	}
 	.readMore {
 		bottom: 30px;
 		width: 180px;
 		margin-left: -90px;
-		font-size: 21px;
+		font-size: 24px;
 	}
 	.readMore:hover:after {
 		right: 145px;
@@ -816,18 +843,15 @@ div[class*=circle-line-group] .line {
 		height: 35px;
 	}
 	.readMore {
-		bottom: 60px;
+		bottom: 15px;
 		padding-top: 12px;
 		padding-bottom: 12px;
-		width: 130px;
-		margin-left: -65px;
-		font-size: 16px;
+		width: 140px;
+		margin-left: -70px;
+		/* font-size: 16px; */
 	}
 }
 @media (max-width: 374px) {
-	.mask {
-		padding-bottom: 125px;
-	}
 	.mask h1 {
 		margin-bottom: 0;
 	}
@@ -844,7 +868,7 @@ div[class*=circle-line-group] .line {
 		letter-spacing: 0.1em;
 	}
 	.mask ul.product li + li {
-		margin-left: 0.5em;
+		margin-left: 1em;
 	}
 	.mask ul.product li + li:before {
 		content: '';
@@ -854,6 +878,6 @@ div[class*=circle-line-group] .line {
 		font-size: 12px;
 	}
 	.readMore {
-		bottom: 60px;
+		bottom: 30px;
 	}
 }
