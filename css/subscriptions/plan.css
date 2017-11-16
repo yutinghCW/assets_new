@@ -76,18 +76,56 @@
 /*1018 edit end*/
 
 ul.set {
-	padding: 25px 0;
+	padding: 0;
 	margin: 20px 0 0;
-	background: #f9f9f9;
+	display: inline-flex;
+	flex-wrap: wrap;
 }
 ul.set > li {
 	position: relative;
 	float: left;
 	width: 33.333333%;
-	padding: 0 35px;
-	border-right: 1px solid #eee;
+	padding: 75px 45px;
 	line-height: 1.25;
 	text-align: center;
+	border: solid #ddd;
+	transition: all 0.3s;
+}
+ul.set > li[data-dynamicclass*=twoDevicePlan] {
+	padding: 75px 45px;
+	border-width: 1px;
+	background: #fcfcfc;
+}
+ul.set > li[data-dynamicclass*=webAccessPlan] {
+	border-width: 1px 0 1px 1px;
+	background: #f9f9f9;
+}
+ul.set > li[data-dynamicclass*=PaperPlan] {
+	border-width: 1px 1px 1px 0;
+	background: #f9f9f9;
+}
+@media (max-width: 1024px) {
+	ul.set {
+		align-items: stretch;
+		vertical-align: top;
+		flex-wrap: nowrap;
+	}
+}
+@media screen and (min-width: 1024px) {
+	ul.set > li {
+		padding: 30px 35px;
+		align-self: baseline;
+	}
+	ul.set > li[data-dynamicclass*=twoDevicePlan]	{order: 2;padding: 75px 45px;z-index: 1;}
+	ul.set > li[data-dynamicclass*=webAccessPlan]	{order: 1;}
+	ul.set > li[data-dynamicclass*=PaperPlan]		{order: 3;}
+	ul.set > li[data-dynamicclass*=twoDevicePlan]:hover {
+		background: #fff;
+	}
+	ul.set > li[data-dynamicclass*=webAccessPlan]:hover,
+	ul.set > li[data-dynamicclass*=PaperPlan]:hover {
+		background: #fcfcfc;
+	}
 }
 ul.set div.set div {
 	padding: .5em 0;
@@ -109,6 +147,18 @@ ul.set div.set h4 {
 	letter-spacing: .025em;
 	font-weight: bold;
 }
+ul.set div.set h6 {
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	padding: 2.5px 5px;
+	color: #d60c18;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px solid #d60c18;
+	transform: translateX(-50%);
+}
 ul.set div.set-img {
 	width: 120px;
 	height: 120px;
@@ -119,6 +169,7 @@ ul.set div.set-img {
 	border: 1px solid #eee;
 }
 ul.set div.set div div.set-price {
+	min-height: 70px;
 	font-size: 16px;
 	padding-bottom: 0;
 	margin: 0;
@@ -131,12 +182,9 @@ ul.set div.set div div.ori-price {
 	margin: 0;
 	min-height: 27.5px;
 }
-ul.set div.set-price span {
-	/*color: #d60c18; font-weight: bold;*/
-}
 ul.set ul.set-describe {
-	/*min-height: 140px;*/
-	min-height: 200px;
+	display: table;
+	margin: auto;
 	text-align: left;
 	line-height: 1.6;
 	list-style: outside disc;
@@ -154,24 +202,18 @@ ul.set div.set input {
 	box-shadow: none;
 	-webkit-appearance: none;
 }
-
-@media screen and (min-width: 768px) {
-	ul.set div.set:hover {
-		position: absolute;
-		top: -42.5px;
-		left: 0;
-		width: calc(100% + 2px);
-		padding: 41.5px 35px 58.5px;
-		margin: 0 -1px -102px;
-		background: #fff;
-		border: 1px solid #e5e5e5;
-	}
-	ul.set li + li ul.set-describe {
-		margin-top: 28px;
+@media screen and (width: 414px) {
+	ul.set ul.set-describe {
+		min-height: 230px;
 	}
 }
-.setPlan .tabContent {
-	padding-top: 70px;
+@media screen and (min-width: 768px) {
+	ul.set ul.set-describe {
+		min-height: 210px;
+	}
+}
+.setPlan > .tabContent {
+	padding: 30px 0;
 }
 .setPlan .tabContent > ul {
 	display: none;
@@ -244,6 +286,56 @@ ul.set div.set input {
 	border-color: transparent transparent transparent #999;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	.swiper-container .prev,
+	.swiper-container .next {
+		display: block;
+		width: 46px;
+		height: 46px;
+		margin-top: -23px;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		text-decoration: none;
+		z-index: 5;
+	}
+	.swiper-container .prev {
+		background: rgba(0,0,0,.6) url(../../img/prev-arrow.gif) no-repeat 12px center;
+	}
+	.swiper-container .next {
+		background: rgba(0,0,0,.6) url(../../img/next-arrow.gif) no-repeat 16px center;
+	}
+	.swiper-container .prev {
+		left: 0;
+		transition: .5s;
+		cursor: pointer;
+	}
+	.swiper-container .next {
+		right: 0;
+		transition: .5s;
+		cursor: pointer;
+	}
+	.swiper-container .prev:hover {
+		background: #d60c18 url(../../img/prev-arrow.gif) no-repeat 4px center;
+	}
+	.swiper-container .next:hover {
+		background: #d60c18 url(../../img/next-arrow.gif) no-repeat 24px center;
+	}
+	.orderSliderDot {
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 50px;
+	}
+	.orderSliderDot span {
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: #7e8184;
+		margin: 0 4px;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.order-page .plan .pic {
 		margin: 0 40px 10px 0;
@@ -262,21 +354,14 @@ ul.set div.set input {
 	ul.set {
 		/*height: 406px;*/
 		padding: 35px 0;
-		margin: 0 0 20px;
+		margin: 0;
 	}
 	ul.set > li {
 		float: none;
 		width: 100%;
 		max-width: 588px;
 		margin: auto;
-		padding: 0 60px;
-		border-right: 0 solid #eee;
-	}
-	ul.set div.set + div.set {
-		border-left: 0 solid #fff;
-	}
-	ul.set div.set + div.set + div.set + div.set {
-		border-right: 0 solid #eee;
+		border-width: 1px 0px !important;
 	}
 	ul.set div.set h4 {
 		padding: 0 0 1em;
@@ -295,13 +380,7 @@ ul.set div.set input {
 	ul.set div.set-price {
 		text-align: left;
 	}
-	.setPlan .tabContent {
-		padding-top: 20px;
-	}
-}
-
-@media screen and (max-width:767px) {
-/*	.orderSliderArticle {
+	/*.orderSliderArticle {
 		position: relative;
 		overflow: hidden;
 		height: 0;
@@ -353,16 +432,15 @@ ul.set div.set input {
 		-ms-animation: slide_rtl_out .8s linear 1 both;
 		-o-animation: slide_rtl_out .8s linear 1 both;
 		animation: slide_rtl_out .8s linear 1 both;
-	}
-*/	.swiper-container .prev,
+	}*/
+	.swiper-container .prev,
 	.swiper-container .next {
 		display: block;
 		width: 46px;
 		height: 46px;
+		margin-top: -23px;
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		margin: auto;
+		top: 50%;
 		text-align: center;
 		text-decoration: none;
 		z-index: 5;
@@ -372,10 +450,6 @@ ul.set div.set input {
 	}
 	.swiper-container .next {
 		background: rgba(0,0,0,.6) url(../../img/next-arrow.gif) no-repeat 16px center;
-	}
-	.swiper-container .prev,
-	.swiper-container .next {
-		top: -66px;
 	}
 	.swiper-container .prev {
 		left: 0;
@@ -415,6 +489,9 @@ ul.set div.set input {
 }
 
 @media screen and (max-width: 413px) {
+	ul.set > li {
+		min-height: 660px;
+	}
 	/*1018 edit start*/
 	.order-page h1 span {
 		display: block;
@@ -424,19 +501,11 @@ ul.set div.set input {
 	}
 	/*1018 edit end*/
 
-	ul.set {
-		height: 512px;
-	}
 	ul.set div.set h4 {
 		padding: 0 0 .5em;
 	}
 	ul.set div.set div {
 		padding: .25em 0;
-	}
-	ul.set div.set {
-	/*
-			width: 320px;
-		*/
 	}
 	ul.set div.set div.set-label {
 		float: none;
