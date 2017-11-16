@@ -297,8 +297,8 @@ $(function () {
 
     $('.order-page .tabPanel .tabGroup li').click(function () {
         var currentId = $(this).data("dynamicclass");
-        $(this).parent().parent().siblings('.tabContent').children('ul').removeClass('active');
-        $('.tabContent ul#' + currentId).addClass('active');
+        $('.order-page .tabContent ul').removeClass('active');
+        $('.order-page .tabContent ul#' + currentId).addClass('active');
     });
 
     //會員頁用：一般幻燈片
@@ -346,11 +346,10 @@ $(function () {
     }
 
     //決勝頁smooth btn
-    $(".orderSliderArticle > li:gt(0)").click(function () {
+    $(".orderSliderArticle > li[data-dynamicclass*=twoDevicePlan], .orderSliderArticle > li[data-dynamicclass*=PaperPlan]").click(function () {
         $('html,body').animate({
             scrollTop: $(".tabContent").offset().top - 70
-        },
-                750);
+        }, 750);
         //return false;
     });
 
