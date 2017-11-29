@@ -1,12 +1,11 @@
 @charset "UTF-8";
-
-.opening {
+.value-page .opening {
 	position: relative;
 	width: 100%;
 	height: calc(100vh - 50px);
 	overflow: hidden;
 }
-.frame {
+.value-page .opening .frame {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -14,16 +13,16 @@
 	height: 100%;
 	overflow: hidden;
 }
-.frameA {
+.value-page .opening .frameA {
 	animation: frameAShowHide 11.35s linear 1 forwards alternate;
 	z-index: 1;
 }
-.frameB {
+.value-page .opening .frameB {
 	opacity: 0;
 	animation: frameBShowHide 11.35s linear 1 forwards alternate;
 	z-index: 2;
 }
-.frameC {
+.value-page .opening .frameC {
 	opacity: 0;
 	animation: frameCShowHide 11.35s linear 1 forwards alternate;
 	background-color: #CA0C18;
@@ -55,18 +54,18 @@ div[class*=circle-line-group] {
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-.circle-line-group {
+.value-page .opening .circle-line-group {
 	width: 303px;
 	height: 266px;
 }
-.circle-line {
+.value-page .opening .circle-line {
 	position: absolute;
 	display: inline-block;
 }
-.circle-line-group .circle-line {
+.value-page .opening .circle-line-group .circle-line {
 	transform-origin: bottom;
 }
-.halfclip {
+.value-page .opening .halfclip {
 	width: 50%;
 	height: 100%;
 	right: 0px;
@@ -74,11 +73,11 @@ div[class*=circle-line-group] {
 	overflow: hidden;
 	transform-origin: left center;
 }
-.circle .halfclip {
+.value-page .opening .circle .halfclip {
 	animation: cliprotate .5s 1;
 	transform: rotate(180deg);
 }
-.halfcircle {
+.value-page .opening .halfcircle {
 	box-sizing: border-box;
 	height: 100%;
 	right: 0px;
@@ -86,37 +85,37 @@ div[class*=circle-line-group] {
 	border-radius: 50%;
 	-webkit-backface-visibility: hidden;
 }
-.circle-line-group .halfcircle {
+.value-page .opening .circle-line-group .halfcircle {
 	border: 3px solid transparent;
 	border-top-color: #D60C18;
 	border-left-color: #D60C18;
 }
-.clipped {
+.value-page .opening .clipped {
 	width: 200%;
 	transform: rotate(-45deg);
 }
-.circle .clipped {
+.value-page .opening .circle .clipped {
 	transform: rotate(135deg);
 	animation: rotate .25s linear 2;
 }
-.opening .fixed {
+.value-page .opening .fixed {
 	width: 100%;
 	transform: rotate(135deg);
 	opacity: 0;
 }
-.opening .circle .fixed {
+.value-page .opening .circle .fixed {
 	opacity: 1;
 	animation: showfixed .5s 1;
 }
-div[class*=circle-line-group] .line {
+.value-page .opening div[class*=circle-line-group] .line {
 	position: relative;
 	margin: auto;
 	border-radius: 1px;
 }
-.circle-line-group .line {
+.value-page .opening .circle-line-group .line {
 	width: 3px;
 }
-.line:after {
+.value-page .opening .line:after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -125,98 +124,98 @@ div[class*=circle-line-group] .line {
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
 }
-.circle-line-group .line:after {
+.value-page .opening .circle-line-group .line:after {
 	bottom: 0;
 	right: 0;
-	background: -moz-linear-gradient(top, rgba(214,12,24,1) 0%, rgba(214,12,24,0.25) 100%);
-	background: -webkit-linear-gradient(top, rgba(214,12,24,1) 0%,rgba(214,12,24,0.25) 100%);
-	background: linear-gradient(to bottom, rgba(214,12,24,1) 0%,rgba(214,12,24,0.25) 100%);
+	background: -moz-linear-gradient(top, #d60c18 0%, rgba(214, 12, 24, 0.25) 100%);
+	background: -webkit-linear-gradient(top, #d60c18 0%, rgba(214, 12, 24, 0.25) 100%);
+	background: linear-gradient(to bottom, #d60c18 0%, rgba(214, 12, 24, 0.25) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d60c18', endColorstr='#40d60c18',GradientType=0 );
 	animation: lineUp .75s .75s 1 forwards alternate;
 }
-.circle-line-group .circle-line {
+.value-page .opening .circle-line-group .circle-line {
 	animation: 1s .75s 1 forwards alternate;
 }
-.circle-line.A {
+.value-page .opening .circle-line.A {
 	top: -3px;
 	left: 141px;
 	transform: rotate(-9deg);
 	animation-name: spreadA;
 }
-.circle-line.B {
+.value-page .opening .circle-line.B {
 	top: 15px;
 	right: 133px;
 	transform: rotate(52deg);
 	animation-name: spreadB;
 }
-.circle-line.C {
+.value-page .opening .circle-line.C {
 	top: -7px;
 	right: 130px;
 	transform: rotate(106deg);
 	animation-name: spreadC;
 }
-.circle-line.D {
+.value-page .opening .circle-line.D {
 	bottom: 120px;
 	right: 138px;
 	transform: rotate(162.5deg);
 	animation-name: spreadD;
 }
-.circle-line.E {
+.value-page .opening .circle-line.E {
 	bottom: 125px;
 	right: 152px;
 	transform: rotate(235deg);
 	animation-name: spreadE;
 }
-.circle-line.F {
+.value-page .opening .circle-line.F {
 	top: -9px;
 	left: 131px;
 	transform: rotate(-82deg);
 	animation-name: spreadF;
 }
-.circle-line.C1 {
+.value-page .opening .circle-line.C1 {
 	top: 267px;
 	left: -11px;
 	transform: rotate(-105.65deg);
 }
-.circle-line.C2 {
+.value-page .opening .circle-line.C2 {
 	top: -29px;
 	right: -5px;
 	transform: rotate(28.2deg);
 }
-.circle-line.C3 {
+.value-page .opening .circle-line.C3 {
 	top: 469px;
 	right: 250px;
 	transform: rotate(105deg);
 }
-.circle {
+.value-page .opening .circle {
 	position: relative;
 }
-.circle-line-group .circle {
+.value-page .opening .circle-line-group .circle {
 	width: 18px;
 	height: 18px;
 }
-.circle-line-group .circle {
+.value-page .opening .circle-line-group .circle {
 	animation: circleOut .75s .75s 1 forwards alternate;
 }
-.circle-line.A .line {
+.value-page .opening .circle-line.A .line {
 	height: 107px;
 }
-.circle-line.B .line {
+.value-page .opening .circle-line.B .line {
 	height: 92px;
 }
-.circle-line.C .line {
+.value-page .opening .circle-line.C .line {
 	height: 125px;
 }
-.circle-line.D .line {
+.value-page .opening .circle-line.D .line {
 	height: 109px;
 }
-.circle-line.E .line {
+.value-page .opening .circle-line.E .line {
 	height: 99px;
 }
-.circle-line.F .line {
+.value-page .opening .circle-line.F .line {
 	height: 123px;
 }
-.frameB .copy {
+.value-page .opening .frameB .copy {
 	display: table;
 	position: absolute;
 	top: 50%;
@@ -226,8 +225,8 @@ div[class*=circle-line-group] .line {
 	font-size: 18px;
 	letter-spacing: 0.2em;
 }
-.frameB .copy:before,
-.frameB .copy:after {
+.value-page .opening .frameB .copy:before,
+.value-page .opening .frameB .copy:after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -236,48 +235,39 @@ div[class*=circle-line-group] .line {
 	height: 100%;
 	z-index: 1;
 }
-.frameB .copy:before {
+.value-page .opening .frameB .copy:before {
 	left: 0;
 	background-color: #C71D6F;
 }
-.frameB .copy:after {
+.value-page .opening .frameB .copy:after {
 	right: 0;
 	background-color: #D09693;
 }
-.frameB .copy p {
+.value-page .opening .frameB .copy p {
 	position: relative;
 	padding: 5px;
 	font-size: 18px;
 	opacity: 0;
 }
-.frameB .copy.end p {
+.value-page .opening .frameB .copy.end p {
 	color: #CA0C18;
 }
-.frameB .copy.A p {
+.value-page .opening .frameB .copy.A p {
 	animation: copytextIn 3s 1.45s 1 forwards alternate;
 }
-.frameB .copy.A:before {
-	animation:     copyIn 0.85s 1.45s 1 ease-out forwards alternate;
+.value-page .opening .frameB .copy.A:before {
+	animation: copyIn 0.85s 1.45s 1 ease-out forwards alternate;
 }
-.frameB .copy.A:after {
-	animation:    copyOut 0.85s 3.2s 1 ease-in forwards alternate;
+.value-page .opening .frameB .copy.A:after {
+	animation: copyOut 0.85s 3.2s 1 ease-in forwards alternate;
 }
-.frameB .copy.end p {
+.value-page .opening .frameB .copy.end p {
 	animation: copyEndtextIn 3s 3.85s 1 forwards alternate;
 }
-.frameB .copy.end:before {
-	animation:     copyIn 0.85s 3.85s 1 ease-out forwards alternate;
+.value-page .opening .frameB .copy.end:before {
+	animation: copyIn 0.85s 3.85s 1 ease-out forwards alternate;
 }
-/*.frameB .copy.B:after {
-	animation:    copyOut 0.85s 7.5s 1 ease-in forwards alternate;
-}
-.frameB .copy.C p {
-	animation: copyEndtextIn 4s 8.35s 1 forwards alternate;
-}
-.frameB .copy.C:before {
-	animation:     copyIn 0.85s 8.35s 1 ease-out forwards alternate;
-}*/
-.frameB .copy.end span {
+.value-page .opening .frameB .copy.end span {
 	position: absolute;
 	top: 50%;
 	left: calc(1.2em * 6);
@@ -288,99 +278,99 @@ div[class*=circle-line-group] .line {
 	background-color: #CA0C18;
 	animation: circleBg 0.85s 7s 1 ease-out forwards alternate;
 }
-.circle-line-group-2 {
+.value-page .opening .circle-line-group-2 {
 	width: 100%;
 }
-.circle-line-group-2 .circle-line {
+.value-page .opening .circle-line-group-2 .circle-line {
 	transform-origin: top;
 }
-.circle-line-group-2 .circle-line .circle {
+.value-page .opening .circle-line-group-2 .circle-line .circle {
 	animation: hideCircleC 0.3s 10.95s 1 forwards alternate;
 }
-.circle-line-group-2 .circle .halfclip {
+.value-page .opening .circle-line-group-2 .circle .halfclip {
 	opacity: 0;
 	animation: cliprotateC .5s 7.5s 1 forwards;
 }
-.circle-line-group-2 .circle .fixed {
+.value-page .opening .circle-line-group-2 .circle .fixed {
 	opacity: 0;
 	animation: showfixedC .5s 7.5s 1 forwards;
 }
-.circle-line-group-2 .circle .clipped {
+.value-page .opening .circle-line-group-2 .circle .clipped {
 	animation: rotateC .25s 7.5s linear 2 forwards;
 }
-.circle-line-group-2 .halfcircle {
+.value-page .opening .circle-line-group-2 .halfcircle {
 	border: 2px solid transparent;
 	border-top-color: #E6E6E6;
 	border-left-color: #E6E6E6;
 }
-.circle-line-group-2 .line {
+.value-page .opening .circle-line-group-2 .line {
 	width: 2px;
 }
-.circle-line-group-2 .line:after {
+.value-page .opening .circle-line-group-2 .line:after {
 	top: 0;
 	left: 0;
 	background-color: #E6E6E6;
 	animation: lineUpC 3.3s 7.7s 1 forwards alternate;
 }
-.circle-line-group-2 .circle {
+.value-page .opening .circle-line-group-2 .circle {
 	width: 22px;
 	height: 22px;
 	animation: circleHideC 3.3s 7.7s 1 forwards alternate;
 }
-.circle-line.C1 .line {
+.value-page .opening .circle-line.C1 .line {
 	height: 1022px;
 }
-.circle-line.C1 .line {
+.value-page .opening .circle-line.C1 .line {
 	height: 1022px;
 }
-.circle-line.C2 .line {
+.value-page .opening .circle-line.C2 .line {
 	height: 530px;
 }
-.circle-line.C3 .line {
+.value-page .opening .circle-line.C3 .line {
 	height: 750px;
 }
-.mask {
+.value-page .opening .mask {
 	position: relative;
 	padding-bottom: 125px;
 	z-index: 5;
 }
-.mask .maskInside {
+.value-page .opening .mask .maskInside {
 	padding-top: 1px;
 	padding-bottom: 15px;
 	background-color: #CA0C18;
 }
-.mask h1 {
+.value-page .opening .mask h1 {
 	position: relative;
 	margin-top: 35px;
 	margin-bottom: 25px;
 	text-align: center;
 }
-.mask h1:after, .mask h1 .animateLine:after {
+.value-page .opening .mask h1:after, .value-page .opening .mask h1 .animateLine:after {
 	content: '';
 	display: block;
 	clear: both;
 }
-.mask h1 .animateLine {
+.value-page .opening .mask h1 .animateLine {
 	position: absolute;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	z-index: 1;
 }
-.mask h1 .animateLine [class*=half-] {
+.value-page .opening .mask h1 .animateLine [class*=half-] {
 	position: relative;
 }
-.mask h1 .animateLine .half-left {
+.value-page .opening .mask h1 .animateLine .half-left {
 	float: left;
 	width: 50%;
 	padding-left: calc(50% - 330px);
 }
-.mask h1 .animateLine .half-right {
+.value-page .opening .mask h1 .animateLine .half-right {
 	float: left;
 	width: 50%;
 	padding-right: calc(50% - 330px);
 }
-.mask h1 .animateLine [class*=half-]:before {
+.value-page .opening .mask h1 .animateLine [class*=half-]:before {
 	content: '';
 	position: absolute;
 	display: block;
@@ -389,30 +379,30 @@ div[class*=circle-line-group] .line {
 	height: 100%;
 	background-color: #CA0C18;
 }
-.mask h1 .animateLine .half-left:before {
+.value-page .opening .mask h1 .animateLine .half-left:before {
 	animation: hideLineL .25s 7.9s 1 ease-out forwards alternate;
 }
-.mask h1 .animateLine .half-right:before {
+.value-page .opening .mask h1 .animateLine .half-right:before {
 	animation: hideLineR .25s 7.9s 1 ease-out forwards alternate;
 }
-.mask h1 .animateLine .hLine {
+.value-page .opening .mask h1 .animateLine .hLine {
 	display: block;
 	position: relative;
 	width: 100%;
 }
-.mask h1 .animateLine .hLine {
+.value-page .opening .mask h1 .animateLine .hLine {
 	height: 20px;
 }
-.mask h1 .animateLine .hLine + .hLine {
+.value-page .opening .mask h1 .animateLine .hLine + .hLine {
 	margin-top: 19px;
 }
-.mask h1 .animateLine .half-left .hLine {
+.value-page .opening .mask h1 .animateLine .half-left .hLine {
 	float: right;
 }
-.mask h1 .animateLine .half-right .hLine {
+.value-page .opening .mask h1 .animateLine .half-right .hLine {
 	float: left;
 }
-.mask h1 .animateLine .hLine:after {
+.value-page .opening .mask h1 .animateLine .hLine:after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -421,77 +411,77 @@ div[class*=circle-line-group] .line {
 	opacity: 0;
 	animation: .8s 7.7s 1 ease-out forwards alternate;
 }
-.mask h1 .animateLine .hLine:nth-child(odd):after {
+.value-page .opening .mask h1 .animateLine .hLine:nth-child(odd):after {
 	background-color: #E6E6E6;
 }
-.mask h1 .animateLine .hLine:nth-child(even):after {
+.value-page .opening .mask h1 .animateLine .hLine:nth-child(even):after {
 	background-color: #CA0C18;
 }
-.mask h1 .animateLine .half-left .hLine {
+.value-page .opening .mask h1 .animateLine .half-left .hLine {
 	right: 0;
 }
-.mask h1 .animateLine .half-left .hLine:nth-child(1):after {
+.value-page .opening .mask h1 .animateLine .half-left .hLine:nth-child(1):after {
 	right: 8em;
 	width: 30%;
 	animation-name: hideLineL;
 }
-.mask h1 .animateLine .half-left .hLine:nth-child(2):after {
+.value-page .opening .mask h1 .animateLine .half-left .hLine:nth-child(2):after {
 	right: 5em;
 	width: 65%;
 	animation-name: hideLineL;
 }
-.mask h1 .animateLine .half-left .hLine:nth-child(3):after {
+.value-page .opening .mask h1 .animateLine .half-left .hLine:nth-child(3):after {
 	right: 6em;
 	width: 50%;
 	animation-name: hideLineL;
 }
-.mask h1 .animateLine .half-right .hLine:nth-child(1):after {
+.value-page .opening .mask h1 .animateLine .half-right .hLine:nth-child(1):after {
 	left: 3em;
 	width: 20%;
 	animation-name: hideLineR;
 }
-.mask h1 .animateLine .half-right .hLine:nth-child(2):after {
+.value-page .opening .mask h1 .animateLine .half-right .hLine:nth-child(2):after {
 	left: 5em;
 	width: 75%;
 	animation-name: hideLineR;
 }
-.mask h1 .animateLine .half-right .hLine:nth-child(3):after {
+.value-page .opening .mask h1 .animateLine .half-right .hLine:nth-child(3):after {
 	left: 1em;
 	width: 50%;
 	animation-name: hideLineR;
 }
-.mask h1 img {
+.value-page .opening .mask h1 img {
 	height: 60px;
 	opacity: 0;
 	animation: hADisplay 0.25s 8.1s 1 ease-out forwards alternate;
 }
-.mask ul.product {
+.value-page .opening .mask ul.product {
 	position: relative;
 	display: table;
 	margin: 25px auto 40px;
 	text-align: center;
 	overflow: hidden;
 }
-.mask ul.product:before,
-.mask ul.product:after {
+.value-page .opening .mask ul.product:before,
+.value-page .opening .mask ul.product:after {
 	content: '';
 	position: absolute;
 	height: calc(100% - 50px);
 	bottom: 0;
 }
-.mask ul.product:before {
+.value-page .opening .mask ul.product:before {
 	width: 0%;
 	left: 0;
 	background-color: #fff;
 	animation: liColorDisplay 0.6s 8.3s 1 ease-out forwards alternate;
 }
-.mask ul.product:after {
+.value-page .opening .mask ul.product:after {
 	width: 100%;
 	left: 100%;
 	background-color: #E6E6E6;
 	animation: liColorHide 0.3s 8.6s 1 ease-out forwards alternate;
 }
-.mask ul.product li {
+.value-page .opening .mask ul.product li {
 	position: relative;
 	display: inline-block;
 	color: #fff;
@@ -500,19 +490,19 @@ div[class*=circle-line-group] .line {
 	opacity: 0;
 	animation: liDisplay 0.3s 8.6s 1 ease-out forwards alternate;
 }
-.mask ul.product li a {
+.value-page .opening .mask ul.product li a {
 	color: #fff;
 }
-.mask ul.product li + li {
+.value-page .opening .mask ul.product li + li {
 	margin-left: 1.2em;
 }
-.mask ul.product li + li:before {
+.value-page .opening .mask ul.product li + li:before {
 	content: '．';
 	position: absolute;
 	right: 100%;
 	bottom: 0;
 }
-.mask ul.product li .appositive {
+.value-page .opening .mask ul.product li .appositive {
 	display: none;
 	min-width: 105px;
 	padding: 7px 7px 12px;
@@ -528,7 +518,7 @@ div[class*=circle-line-group] .line {
 	opacity: 0;
 	animation: bounceInDown 0.8s 9s 1 ease-out forwards alternate;
 }
-.mask p.slogan {
+.value-page .opening .mask p.slogan {
 	padding-left: 0.25em;
 	color: #fff;
 	font-size: 16px;
@@ -537,10 +527,10 @@ div[class*=circle-line-group] .line {
 	opacity: 0;
 	animation: sloganIn 0.5s 9.35s 1 ease-out forwards alternate;
 }
-.mask p.slogan span + span {
-	display: none
+.value-page .opening .mask p.slogan span + span {
+	display: none;
 }
-.readMore {
+.value-page .opening .readMore {
 	position: absolute;
 	display: block;
 	bottom: 15px;
@@ -561,11 +551,11 @@ div[class*=circle-line-group] .line {
 	animation: sloganIn 0.5s 9.7s 1 ease-out forwards alternate;
 	z-index: 6;
 }
-.readMore:hover {
+.value-page .opening .readMore:hover {
 	color: #fff;
 	background-color: #CA0C18;
 }
-.readMore:before, .readMore:after {
+.value-page .opening .readMore:before, .value-page .opening .readMore:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -575,19 +565,19 @@ div[class*=circle-line-group] .line {
 	transition: 0.3s;
 	z-index: -1;
 }
-.readMore:before {
+.value-page .opening .readMore:before {
 	background-color: #f5f5f5;
 	animation: readMore 1s infinite ease-out alternate;
 }
-.readMore:after {
+.value-page .opening .readMore:after {
 	background-color: #fafafa;
 	animation: readMore 1s infinite ease-out reverse;
 }
-.readMore:hover:before {
+.value-page .opening .readMore:hover:before {
 	background-color: #d60c18;
 	animation: readMore 1s 1 ease-out alternate;
 }
-.readMore:hover:after {
+.value-page .opening .readMore:hover:after {
 	background-color: #d60c18;
 	animation: readMore 1s 1 ease-out reverse;
 }
@@ -759,125 +749,124 @@ div[class*=circle-line-group] .line {
 	}
 }
 @media (min-width: 768px) {
-	.opening {
+	.value-page .opening {
 		height: calc(100vh - 97px);
 	}
-	.circle-line-group-2 {
+	.value-page .opening .circle-line-group-2 {
 		width: 1025px;
 		height: 506px;
 		margin-top: -30px;
 	}
-	.mask {
+	.value-page .opening .mask {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		width: 768px;
 		height: 385px;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 	}
-	.mask h1 .animateLine .hLine {
+	.value-page .opening .mask h1 .animateLine .hLine {
 		height: 10px;
 	}
-	.mask h1 .animateLine .hLine + .hLine {
+	.value-page .opening .mask h1 .animateLine .hLine + .hLine {
 		margin-top: 15px;
 	}
-	.mask h1 img + img {
+	.value-page .opening .mask h1 img + img {
 		margin-left: 38px;
 	}
-	.mask ul.product li {
+	.value-page .opening .mask ul.product li {
 		font-size: 21px;
 	}
-	.mask p.slogan {
+	.value-page .opening .mask p.slogan {
 		font-size: 21px;
 	}
-	.readMore {
+	.value-page .opening .readMore {
 		bottom: 30px;
 		width: 180px;
 		margin-left: -90px;
 		font-size: 24px;
 	}
-	.readMore:hover:after {
+	.value-page .opening .readMore:hover:after {
 		right: 145px;
 	}
 }
 @media (max-width: 767px) {
-	.mask {
+	.value-page .opening .mask {
 		padding-bottom: 125px;
 	}
-	.mask h1 {
+	.value-page .opening .mask h1 {
 		padding-top: 15px;
 		margin-top: 20px;
 	}
-	.mask h1 img {
+	.value-page .opening .mask h1 img {
 		height: 45px;
 	}
-	.mask p.slogan span {
+	.value-page .opening .mask p.slogan span {
 		display: block;
 	}
-	.readMore {
+	.value-page .opening .readMore {
 		top: auto;
 		bottom: 15px;
 		z-index: 5;
 	}
-	.circle-line-mobile {
+	.value-page .opening .circle-line-mobile {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		width: 1025px;
 		height: 506px;
-		transform: translate(-52.5%,-57.5%) rotate(130deg) scale(0.6);
+		transform: translate(-52.5%, -57.5%) rotate(130deg) scale(0.6);
 	}
-	.readMore {
+	.value-page .opening .readMore {
 		line-height: 1;
 	}
 }
 @media (max-width: 413px) {
-	.circle-line-group-2 {
+	.value-page .opening .circle-line-group-2 {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.mask {
+	.value-page .opening .mask {
 		padding-bottom: 95px;
 	}
-	.mask h1 img {
+	.value-page .opening .mask h1 img {
 		height: 35px;
 	}
-	.readMore {
+	.value-page .opening .readMore {
 		bottom: 15px;
 		padding-top: 12px;
 		padding-bottom: 12px;
 		width: 140px;
 		margin-left: -70px;
-		/* font-size: 16px; */
 	}
 }
 @media (max-width: 374px) {
-	.mask h1 {
+	.value-page .opening .mask h1 {
 		margin-bottom: 0;
 	}
-	.mask p.slogan {
+	.value-page .opening .mask p.slogan {
 		font-size: 17px;
 		line-height: 1.75;
 		letter-spacing: 0.2em;
 	}
-	.mask ul.product {
+	.value-page .opening .mask ul.product {
 		width: calc(100% + 20px);
 		margin: 15px -10px;
 	}
-	.mask ul.product li {
+	.value-page .opening .mask ul.product li {
 		letter-spacing: 0.1em;
 	}
-	.mask ul.product li + li {
+	.value-page .opening .mask ul.product li + li {
 		margin-left: 1em;
 	}
-	.mask ul.product li + li:before {
+	.value-page .opening .mask ul.product li + li:before {
 		content: '';
 	}
-	.mask ul.product li .appositive {
+	.value-page .opening .mask ul.product li .appositive {
 		min-width: 97px;
 		font-size: 12px;
 	}
-	.readMore {
+	.value-page .opening .readMore {
 		bottom: 30px;
 	}
 }
