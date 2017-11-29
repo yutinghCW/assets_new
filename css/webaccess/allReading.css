@@ -465,6 +465,18 @@ body.allReading-Page {
 		position: absolute !important;
 		margin-left: calc(50% - 512px);
 	}
+	.allReading-Page .swiper-container {
+		position: relative;
+		width: 244px;
+		padding-top: 68px;
+		z-index: 102;
+	}
+	.allReading-Page .swiper-container .swiper-wrapper .swiper-button-next {
+		right: -60px;
+	}
+	.allReading-Page .swiper-container .swiper-wrapper .swiper-button-prev {
+		left: -60px;
+	}
 }
 .allReading-Page .fullTetx .iPhone7Mask {
 	position: absolute;
