@@ -1,13 +1,13 @@
-body {
+body.allReading-Page {
 	max-width: 100vw;
 	width: 100vw;
 	overflow-y: scroll !important;
 	overflow-x: hidden !important;
 }
 @media (min-width: 768px) {
- .search {
-  display: none !important;
- }
+	.allReading-Page .search {
+		display: none !important;
+	}
 }
 .allReading-Page .container {
 	position: relative;
@@ -28,7 +28,7 @@ body {
 	transition: .3s;
 }
 @media (min-width: 1025px) {
-.allReading-Page .wrapper,  .allReading-Page .wrapper p {
+.allReading-Page .wrapper, .allReading-Page .wrapper p {
 	font-size: 21px;
 }
 }
@@ -39,23 +39,16 @@ body {
 	font-weight: bold;
 }
 .allReading-Page .opening .container .priceBox {
-	/*display: table;*/
 	position: relative;
 	margin: 0 auto 2.5em;
-	/*0927add*/
-	/*width: 290px;
-	color: #d60c18;
-	line-height: 1.25;*/
 }
 .allReading-Page .opening .container .priceBox > span {
 	position: relative;
-	/*margin-left: .25em;*/
 	color: #999;
 	font-size: 14px;
 	white-space: nowrap;
 	letter-spacing: .025em;
 	text-align: right;
-	/*0927add*/
 	display: inline-block;
 }
 .allReading-Page .opening .container .priceBox > span > span {
@@ -123,7 +116,7 @@ body {
 		overflow: hidden;
 	}
 }
-.index-page.allReading-Page .subNav {
+.allReading-Page.index-page .subNav {
 	top: 0;
 }
 .allReading-Page section {
@@ -183,7 +176,6 @@ body {
 	}
 	.allReading-Page .wrapper h1 {
 		font-size: 30px;
-		/*0927add*/
 		line-height: 1.45;
 	}
 	.allReading-Page .wrapper h3 {
@@ -354,7 +346,6 @@ body {
 		width: 100%;
 		height: 100%;
 		background-color: #000;
-		/*box-shadow: 0 0 15px 10px #000;*/
 		opacity: .6;
 	}
 }
@@ -449,7 +440,6 @@ body {
 }
 .allReading-Page .fullTetx {
 	height: auto;
-	/*	background-color: #8c816f;*/
 }
 .allReading-Page .fullTetx .slideShow {
 	position: relative;
@@ -515,8 +505,7 @@ body {
 	.allReading-Page section.DeepReading .svgAnimation .estDate {
 		animation-name: ch01;
 	}
-	/*指定按鈕長度*/
-	.opening .btn[gtm-name*='webaccess_sub'] {
+	.allReading-Page .opening .btn[gtm-name*='webaccess_sub'] {
 		min-width: 250px;
 	}
 }
@@ -695,7 +684,6 @@ body {
 	.allReading-Page section.DeepReading .svgAnimation .Rotate90,
 	.allReading-Page section.DeepReading .svgAnimation .dayTime,
 	.allReading-Page section.DeepReading svg {
-		/*letter-spacing: -.15em;*/
 		opacity: 0;
 	}
 	.allReading-Page section.DeepReading svg {
@@ -791,7 +779,7 @@ body {
 	stroke-width: 1;
 }
 .allReading-Page .cwkb {
-	height: auto;/*	background-color: #d5d0c5;*/
+	height: auto;
 }
 .allReading-Page .cwkb .container .coverBrickGroup {
 	position: relative;
@@ -818,7 +806,7 @@ body {
 	.allReading-Page .cwkb .container .coverBrickGroup {
 		margin-top: 50px;
 	}
-	.allReading-Page .cwkb .container .coverBrick,  .allReading-Page .cwkb .container .coverBrick img {
+	.allReading-Page .cwkb .container .coverBrick, .allReading-Page .cwkb .container .coverBrick img {
 		width: 100%;
 		height: auto;
 	}
@@ -866,10 +854,10 @@ body {
 	}
 }
 @media (min-width: 1025px) {
-	.allReading-Page .cwkb .align-left-div,  .allReading-Page .cwkb .align-left-div >* {
+	.allReading-Page .cwkb .align-left-div, .allReading-Page .cwkb .align-left-div >* {
 		float: right;
 	}
-	.allReading-Page .cwkb h2,  .allReading-Page .cwkb h3 {
+	.allReading-Page .cwkb h2, .allReading-Page .cwkb h3 {
 		-webkit-writing-mode: vertical-rl;
 		writing-mode: vertical-rl;
 		word-break: keep-all;
@@ -880,10 +868,10 @@ body {
 	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-	.allReading-Page .cwkb .align-left-div,  .allReading-Page .cwkb .align-left-div >* {
+	.allReading-Page .cwkb .align-left-div, .allReading-Page .cwkb .align-left-div >* {
 		float: right;
 	}
-	.allReading-Page .cwkb h2,  .allReading-Page .cwkb h3 {
+	.allReading-Page .cwkb h2, .allReading-Page .cwkb h3 {
 		text-align: center;
 		line-height: 1.05;
 	}
@@ -893,7 +881,7 @@ body {
 	.allReading-Page .cwkb h3 {
 		width: 31px;
 	}
-	.allReading-Page .cwkb h2 span,  .allReading-Page .cwkb h3 span {
+	.allReading-Page .cwkb h2 span, .allReading-Page .cwkb h3 span {
 		display: block;
 	}
 	.allReading-Page section.cwkb .square {
@@ -1045,7 +1033,10 @@ body {
 .allReading-Page .severalPad.iPadDownDisplay .embed-responsive.embed-responsive-iPad {
 	padding-bottom: 133.3333333333333%;
 }
-.allReading-Page .severalPad .embed-responsive .embed-responsive-item, .allReading-Page .severalPad .embed-responsive iframe, .allReading-Page .severalPad .embed-responsive embed, .allReading-Page .severalPad .embed-responsive object {
+.allReading-Page .severalPad .embed-responsive .embed-responsive-item,
+.allReading-Page .severalPad .embed-responsive iframe,
+.allReading-Page .severalPad .embed-responsive embed,
+.allReading-Page .severalPad .embed-responsive object {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -1107,21 +1098,20 @@ body {
 		background-position: center 22.5vh;
 	}
 }
-.perspectiveView .perspectiveScroll {
+.allReading-Page .perspectiveView .perspectiveScroll {
 	position: relative;
 }
-.perspectiveView .perspectiveScroll img.scrollAnimate {
+.allReading-Page .perspectiveView .perspectiveScroll img.scrollAnimate {
 	position: absolute;
 }
-.perspectiveView .perspectiveScroll img.blankImgScale {
+.allReading-Page .perspectiveView .perspectiveScroll img.blankImgScale {
 	opacity: 0;
 }
 @media (max-width: 767px) {
 	.allReading-Page .perspectiveView {
 		height: 700px;
-		/*padding: 100px 0 50px;*/
 	}
-	.perspectiveView .perspectiveScroll img {
+	.allReading-Page .perspectiveView .perspectiveScroll img {
 		width: 1024px;
 		height: auto;
 	}
@@ -1232,7 +1222,6 @@ body {
 	margin: 0 2.5px;
 	color: #d60c18;
 	font-size: 17px;
-	/*font-weight: bold;*/
 }
 .allReading-Page .bottomPop a {
 	display: inline-block;
@@ -1258,51 +1247,26 @@ body {
 	color: #d60c18;
 	background: transparent;
 }
-/*Iris-Edit-0222*/
-@media (min-width: 330px) {
-	/*.allReading-Page .bottomPop p {
-		padding: 0;
-	}
-	.allReading-Page .bottomPop a {
-		display: none;
-	}*/
-}
 /*====================== 字幕動畫 start ======================*/
-.subtitle {
+.allReading-Page section.DeepReading .svgAnimation .subtitle {
 	animation-duration: 11s;
 	animation-iteration-count: infinite;
 	opacity: 0;
 }
 @media (min-width: 330px) {
-	.subtitle {
+	.allReading-Page section.DeepReading .svgAnimation .subtitle {
 		animation-duration: 8s;
 	}
 }
-.subtitle01 {
-	animation-name: so01;
-}
-.subtitle02 {
-	animation-name: so02;
-}
-.subtitle03 {
-	animation-name: so03;
-}
-.subtitle04 {
-	animation-name: so04;
-}
-.subtitle05 {
-	animation-name: so05;
-}
-.subtitle06 {
-	animation-name: so06;
-}
-.subtitle07 {
-	animation-name: so07;
-}
-.subtitle08 {
-	animation-name: so08;
-}
- @keyframes so01 {
+.allReading-Page section.DeepReading .svgAnimation .subtitle01 { animation-name: so01; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle02 { animation-name: so02; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle03 { animation-name: so03; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle04 { animation-name: so04; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle05 { animation-name: so05; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle06 { animation-name: so06; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle07 { animation-name: so07; }
+.allReading-Page section.DeepReading .svgAnimation .subtitle08 { animation-name: so08; }
+@keyframes so01 {
 	0% {opacity: 0;}
 	9% {opacity: 0;}
 	14% {opacity: 1;}
@@ -1527,8 +1491,6 @@ body {
 /*====================== 0927-購買方案 end ======================*/
 .allReading-Page .faq {
 	height: auto;
-	/*background-color: #fafafa;*/
-	/*0927-edit*/
 	background-color: #fff;
 }
 .allReading-Page .faq .collapse {
@@ -1633,7 +1595,6 @@ body {
 }
 .allReading-Page .wrapper .vipInvite h4 {
 	color: #373737;
-	/*font-size: 24px;*/
 	font-weight: bold;
 }
 .allReading-Page .wrapper .vipInvite #contentFrame {
@@ -1702,7 +1663,6 @@ body {
 		margin-top: 1em;
 	}
 }
-/*0307-IrisAdd*/
 @media (max-width: 610px) {
 	.allReading-Page .wrapper .vipInvite h4 span {
 		display: block;
@@ -1712,7 +1672,7 @@ body {
 	}
 }
 @media (max-width: 465px) {
-	.allReading-Page .wrapper .vipInvite h4 span,  .allReading-Page .wrapper .vipInvite h4 span +span {
+	.allReading-Page .wrapper .vipInvite h4 span, .allReading-Page .wrapper .vipInvite h4 span + span {
 		display: block;
 	}
 }
