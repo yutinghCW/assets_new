@@ -1,9 +1,9 @@
 @media screen and (max-width: 767px) {
-	.allReading-Page .logo {
+	.client-allReading-Page .logo {
 		margin-left: 15px;
 	}
 }
-.allReading-Page section.checkLoader {
+.client-allReading-Page section.checkLoader {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -12,88 +12,88 @@
 	background-color: #fff;
 	z-index: 9999999;
 }
-.loader {
+.client-allReading-Page .loader {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	width: 300px;
 	transform: translate(-50%,-50%);
 }
-.loader img {
+.client-allReading-Page .loader img {
 	position: relative;
 	display: block;
 	z-index: 1;
 }
-.loader .stepBox {
+.client-allReading-Page .loader .stepBox {
 	position: relative;
 }
-.loader .stepLine .step {
+.client-allReading-Page .loader .stepLine .step {
 	float: left;
 	display: block;
 	width: 33%;
 	text-align: center;
 	background-position: center;
 	background-repeat: no-repeat;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
 }
-.loader .stepLine.img .step {
+.client-allReading-Page .loader .stepLine.img .step {
 	height: 45px;
 }
-.loader .stepLine.status .step {
+.client-allReading-Page .loader .stepLine.status .step {
 	position: relative;
 	margin: 15px 0;
 	height: 30px;
 }
-.loader .stepLine.img .step1 {
+.client-allReading-Page .loader .stepLine.img .step1 {
 	background-image: url(../../img/webaccess/checkStep-01.svg);
 }
-.loader .stepLine.img .step2 {
+.client-allReading-Page .loader .stepLine.img .step2 {
 	background-image: url(../../img/webaccess/checkStep-02.svg);
 }
-.loader .stepLine.img .step3 {
+.client-allReading-Page .loader .stepLine.img .step3 {
 	background-image: url(../../img/webaccess/checkStep-03.svg);
 }
-.loader .stepLine.img .step1.ing {
+.client-allReading-Page .loader .stepLine.img .step1.ing {
 	background-image: url(../../img/webaccess/checkStep-07.svg);
 }
-.loader .stepLine.img .step2.ing {
+.client-allReading-Page .loader .stepLine.img .step2.ing {
 	background-image: url(../../img/webaccess/checkStep-08.svg);
 }
-.loader .stepLine.img .step3.ing {
+.client-allReading-Page .loader .stepLine.img .step3.ing {
 	background-image: url(../../img/webaccess/checkStep-09.svg);
 }
-.loader .stepLine.img .step1.pass {
+.client-allReading-Page .loader .stepLine.img .step1.pass {
 	background-image: url(../../img/webaccess/checkStep-04.svg);
 }
-.loader .stepLine.img .step2.pass {
+.client-allReading-Page .loader .stepLine.img .step2.pass {
 	background-image: url(../../img/webaccess/checkStep-05.svg);
 }
-.loader .stepLine.img .step3.pass {
+.client-allReading-Page .loader .stepLine.img .step3.pass {
 	background-image: url(../../img/webaccess/checkStep-06.svg);
 }
-.loader .stepLine.status .step{
+.client-allReading-Page .loader .stepLine.status .step{
 	background-image: url(../../img/webaccess/checkStatus-01.svg);
 }
-.loader .stepLine.status .ing {
+.client-allReading-Page .loader .stepLine.status .ing {
 	background-image: url(../../img/webaccess/checkStatus-03.svg);
 }
-.loader .stepLine.status .pass {
+.client-allReading-Page .loader .stepLine.status .pass {
 	background-image: url(../../img/webaccess/checkStatus-02.svg);
 }
-.loader .stepLine.text .step {
+.client-allReading-Page .loader .stepLine.text .step {
 	color: #ccc;
 	font-weight: bold;
 }
-.loader .stepLine.text .ing {
+.client-allReading-Page .loader .stepLine.text .ing {
 	color: #578CA9;
 }
-.loader .stepLine.text .pass {
+.client-allReading-Page .loader .stepLine.text .pass {
 	color: #88B04B;
 }
-.loader .stepLine.status .line:before {
+.client-allReading-Page .loader .stepLine.status .line:before {
 	position: absolute;
 	content: '';
 	width: 73px;
@@ -105,96 +105,88 @@
 	background-size: 10px 10px;
 	background-repeat: repeat-x;
 }
-.loader .stepLine.status .line.ing:before {
+.client-allReading-Page .loader .stepLine.status .line.ing:before {
 	background: #88b04b;
 	background: -moz-linear-gradient(left, #88b04b 0%, #578ca9 100%);
 	background: -webkit-linear-gradient(left, #88b04b 0%,#578ca9 100%);
 	background: linear-gradient(to right, #88b04b 0%,#578ca9 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88b04b', endColorstr='#578ca9',GradientType=1 );
 	background-size: 400% 400%;
-
 	-webkit-animation: ingGradient 1.5s ease infinite;
 	-moz-animation: ingGradient 1.5s ease infinite;
 	-o-animation: ingGradient 1.5s ease infinite;
 	animation: ingGradient 1.5s ease infinite;
 }
-
 @-webkit-keyframes ingGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 @-moz-keyframes ingGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 @-o-keyframes ingGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
 @keyframes ingGradient { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
 }
-
-.loader .stepLine.status .line.pass:before {
+.client-allReading-Page .loader .stepLine.status .line.pass:before {
 	background: #88b04b;
 }
-
 @media (min-width: 400px){
-	.loader {
+	.client-allReading-Page .loader {
 		width: 400px;
 	}
-	.loader .stepLine.status .line:before {
+	.client-allReading-Page .loader .stepLine.status .line:before {
 		width: 105px;
 		right: 79px;
 	}
 }
-
-/*completeBox start*/
-.iconStatus svg {
+.client-allReading-Page .loader .iconStatus svg {
 	display: block;
 	width: 75px;
 	margin: auto;
 }
-.circ{
-    opacity: 0;
-    stroke-dasharray: 130;
-    stroke-dashoffset: 130;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+.client-allReading-Page .loader .circ{
+	opacity: 0;
+	stroke-dasharray: 130;
+	stroke-dashoffset: 130;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
 }
-.tick{
-    stroke-dasharray: 50;
-    stroke-dashoffset: 50;
-    -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
-    -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
-    -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
-    -o-transition: stroke-dashoffset 1s 0.5s ease-out;
-    transition: stroke-dashoffset 1s 0.5s ease-out;
+.client-allReading-Page .loader .tick{
+	stroke-dasharray: 50;
+	stroke-dashoffset: 50;
+	-webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+	-moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+	-ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+	-o-transition: stroke-dashoffset 1s 0.5s ease-out;
+	transition: stroke-dashoffset 1s 0.5s ease-out;
 }
-.drawn + svg .path{
-    opacity: 1;
-    stroke-dashoffset: 0;
+.client-allReading-Page .loader .drawn + svg .path{
+	opacity: 1;
+	stroke-dashoffset: 0;
 }
-.iconStatus p {
+.client-allReading-Page .loader .iconStatus p {
 	opacity: 0;
 	margin: 1.5em 0 0;
 	text-align: center;
 	font-size: 18px;
 	font-weight: bold;
 }
-.iconStatus p.available {
+.client-allReading-Page .loader .iconStatus p.available {
 	color: #88b04b;
 }
-.iconStatus p.occupied {
+.client-allReading-Page .loader .iconStatus p.occupied {
 	color: #d60c18;
 }
-
-/*completeBox end*/
